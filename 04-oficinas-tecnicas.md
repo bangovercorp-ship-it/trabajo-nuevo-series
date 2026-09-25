@@ -22,7 +22,7 @@ Regla común a los cuatro, y la más importante: **no inventar precisión.** Tod
 
 **El peligro, y hay que tenerlo presente:** está pensada para un taller de ciudad grande. Si se aplica tal cual, el taller de Gallín se convierte en un concesionario y la serie pierde lo que la hace serie. El tamaño se fija antes de empezar: lote de 24 × 30 m, y el cuarto secreto entra como una zona más del plano.
 
-**Hallazgo que quedó abierto:** el compresor es el punto único de falla. Si muere, se para todo el taller. Técnicamente habría que respaldarlo; para la serie conviene no arreglarlo nunca, porque el día que muera es un episodio entero.
+**Hallazgo, y ya está decidido:** el compresor es el punto único de falla. Si muere, se para todo el taller. Técnicamente habría que respaldarlo, y la biblia decidió lo contrario a propósito: **no se respalda nunca**, porque el día que muera es un episodio entero. No es un pendiente, es una decisión narrativa.
 
 ## 3 · Técnico en diagnóstico automotriz
 

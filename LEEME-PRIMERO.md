@@ -2,6 +2,8 @@
 
 Carpeta de traspaso, 24 de septiembre de 2026. Sirve para abrir un chat nuevo en Claude Code sin perder nada de lo avanzado.
 
+Está subida a **https://github.com/bangovercorp-ship-it/trabajo-nuevo-series**, para que una sesión que corra en la nube, sin acceso a este disco, tenga el código y las referencias.
+
 ## Qué decir al abrir el chat nuevo
 
 Está listo para copiar en `00-PROMPT-PARA-EMPEZAR.md`. Hay dos versiones: una para que primero te informe, y otra para arrancar trabajando de una vez.
@@ -26,6 +28,8 @@ Serie vertical de TikTok para la marca **Bangover** (Ecuador, salud masculina; p
 | `05-habilidades.md` | Índice de todo lo ejecutado y las reglas permanentes del cliente |
 | `06-tablero-de-control.md` | Los 13 roles del proyecto, cuáles están cerrados y qué falta en cada uno |
 | `prompts\` | Los siete prompts completos, listos para volver a pegar |
+| `codigo\` | Los scripts que ya existen: planos, maqueta 3D, prompts de generación y montaje |
+| `referencias\` | Todo lo ya generado, en JPG liviano, para ver qué hay sin gastar un crédito |
 
 ### La subcarpeta `prompts`
 
@@ -41,7 +45,7 @@ Serie vertical de TikTok para la marca **Bangover** (Ecuador, salud masculina; p
 
 ## La biblia de la serie
 
-Vive en un documento de claude.ai, con seis pestañas, y es la fuente de verdad de todo:
+Vive en un documento de claude.ai, con **siete** pestañas, y es la fuente de verdad de todo:
 
 https://claude.ai/code/artifact/f3c702c2-8f22-45cf-8507-b80c80a3bb8d
 
@@ -50,6 +54,7 @@ https://claude.ai/code/artifact/f3c702c2-8f22-45cf-8507-b80c80a3bb8d
 | Biblia | Tesis, mundo, personajes, leyes, misterio, formato |
 | Personajes a fondo | Cada personaje con su ficha y cómo habla en ecuatoriano |
 | Temporada 1: guiones | Los 8 episodios, con la falla técnica real de cada uno |
+| Estrategia y producción | A quién le habla, la palanca de cada episodio, calendario, métricas, cumplimiento, dirección visual y la cadena de producción |
 | Escenarios | Planos, medidas, maqueta y vistas del pueblo, el taller, el bar y el pasaje |
 | Ecuador · taller y barrio | El expediente técnico del taller y del barrio |
 | Ecuador · biblia sociocultural | Cómo se habla, se come, se bromea y se vive en la costa del Guayas |

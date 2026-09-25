@@ -24,7 +24,7 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 | # | Rol | Estado | Qué falta para el check |
 | --- | --- | --- | --- |
 | 11 | **Arquitecto y urbanista** | ✅ en papel | El expediente del pueblo y del barrio está hecho. Falta dibujar los planos nuevos y rehacer la maqueta |
-| 12 | **Asesor técnico automotriz** | ✅ | Nada. Catálogo de fallas reales con su orden de diagnóstico, el error del aficionado y la metáfora de cada una |
+| 12 | **Asesor técnico automotriz** | ✅ | El catálogo de fallas reales está completo, con su orden de diagnóstico, el error del aficionado y la metáfora. **Con una dependencia:** el episodio 3 se sostiene en la diferencia de octanaje entre la Extra y la Súper, que está marcada como pendiente de validar. Ese dato lo cierra el rol 13, no este |
 | 13 | **Consultor cultural ecuatoriano** | 🔄 | La biblia sociocultural está escrita con fuentes ecuatorianas, pero **todo lo marcado como pendiente lo tiene que leer una persona de la costa**. Es el único punto que no se puede cerrar desde aquí |
 
 ## Lo que el cambio a Ecuador alteró en el tablero
@@ -33,6 +33,13 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 - **El rol 6 retrocedió a propósito.** Todo lo visual quedó obsoleto al mudarse el pueblo. Es el bloque de trabajo que sigue.
 - **El rol 8 cambió de requisito.** Las cuatro pruebas hechas son de acento latino neutro. Para Ecuador hay que buscar costeño, que suena distinto.
 - **El rol 13 es nuevo y es el mayor riesgo de todo el proyecto.** Un acento falso se detecta en tres palabras.
+
+## Detalles abiertos que no bloquean, pero hay que decidir
+
+Son del dueño del proyecto, no se deciden solos:
+
+1. **¿Gallín nació en Puerto Candela o llegó de Guayaquil?** La biblia dice que Guayaquil es la ciudad de su pasado y que ahí fue el mecánico estrella de los Talleres Metropolitanos, pero no dice si nació en el pueblo y volvió, o si llegó de afuera. Cambia cómo lo trata el pueblo entero: al que volvió se le perdona, al forastero se lo mide. Recomendación: **nació en Puerto Candela y volvió derrotado**, porque así el pueblo ya lo conocía joven y eso da escenas gratis.
+2. **¿La Bahía 0 de recepción va dentro del pasillo de maniobra o bajo el toldo de espera?** Recomendación: **bajo el toldo.** Dentro del pasillo, un carro en inspección bloquea a los otros cinco, y el pasillo de 7,50 m es el que permite entrar por la avenida y salir por la Calle Olmedo sin retroceder.
 
 ## El orden en que conviene cerrarlos
 

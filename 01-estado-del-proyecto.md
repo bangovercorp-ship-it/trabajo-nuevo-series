@@ -43,6 +43,8 @@ Los dos nuevos **todavía no tienen hoja de personaje generada**. Es de lo prime
 
 **Ojo con el nombre de la carpeta:** es `pesonajes`, sin la r. Está así desde el principio.
 
+**Copia en el repositorio.** Los scripts están copiados en `codigo\` y todo lo generado está en `referencias\`, en JPG liviano. Es lo que permite trabajar desde una sesión que no ve este disco. Si se cambia un script aquí, hay que volver a copiarlo allá.
+
 ### Identidad de marca
 
 `C:\JUEGOS APP\bangover-identidad\` — el logo oficial es la gota con la llama: `png\gota\gota-insinua.png`. Va bordado en oro al pecho del polo negro del asesor.
@@ -55,7 +57,7 @@ Los dos nuevos **todavía no tienen hoja de personaje generada**. Es de lo prime
 
 1. **Spot de Lázaro**, con sonidos reales, subtítulos y grado de color.
 2. **Biblia de la serie** completa, con los 8 guiones.
-3. **Planos y maqueta** del taller, el bar y el pasaje.
+3. **Planos y maqueta** del taller, el bar y el pasaje. Con un matiz que importa: **la geometría está aprobada, el dibujo no.** Las medidas y la maqueta 3D sirven; los planos dibujados y las imágenes son de la versión peruana y se rehacen (Bloque 1 de `03-pendientes.md`).
 4. **Promocional del bar** (42,5 s, cortado sobre el pulso de la canción de referencia). Está ambientado en Lima: **hay que rehacerlo en Ecuador.**
 5. **Expediente técnico** del taller y del barrio, ya en Ecuador.
 6. **Biblia sociocultural** del habla y la vida de la costa del Guayas.

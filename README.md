@@ -19,7 +19,9 @@ Documentación de trabajo de **El Taller del Tío Gallín**, serie vertical para
 | `05-habilidades.md` | Todo lo ejecutado y las reglas permanentes |
 | `06-tablero-de-control.md` | Los 13 roles del proyecto y su estado |
 | `prompts/` | Los siete prompts completos, listos para reusar |
+| `codigo/` | Los scripts que ya existen: planos con PIL, maqueta 3D en Remotion, prompts de generación y montaje |
+| `referencias/` | Las 69 imágenes ya generadas, en JPG liviano, con su vigencia y sus defectos anotados |
 
 ## Nota
 
-Este repositorio guarda **documentación y prompts**, no claves ni material generado. Las credenciales viven fuera del repositorio y nunca se versionan.
+Este repositorio guarda **documentación, prompts, código y referencias livianas**. No guarda claves ni material pesado: los videos, los audios y las imágenes a resolución completa se quedan fuera. Las credenciales viven fuera del repositorio y nunca se versionan; se verificó archivo por archivo que ningún script lleve una clave escrita.

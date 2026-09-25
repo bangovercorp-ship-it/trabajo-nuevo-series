@@ -5,3 +5,7 @@
 *.jpg
 .secretos/
 *.env
+
+# Las referencias livianas sí van: son la única forma de que una sesión en la nube
+# vea lo que ya existe sin volver a generarlo.
+!referencias/**/*.jpg

@@ -40,4 +40,6 @@ Ninguna de estas se ha usado todavía en este proyecto. Se mencionan porque el t
 | `diseno-con-gusto` | Para cualquier página o pieza gráfica de la marca, que no se vea genérica |
 | `graphify` | Convertir toda la biblia en un grafo consultable, si el material crece mucho |
 
+**Dónde viven estas seis.** En `C:\Users\HP\.claude\skills\`, en la máquina de trabajo. Verificado el 24 de septiembre: las seis están instaladas. **Una sesión que corra en la nube no las tiene**, porque no ve ese disco; desde ahí se trabaja con los prompts de `prompts\`, que sí están en el repositorio.
+
 **Lo que sí se usó del entorno:** el conector de documentos de claude.ai para escribir y editar la biblia, la búsqueda web con fuentes ecuatorianas para la parte cultural, y la memoria del proyecto, que guarda las decisiones entre conversaciones.

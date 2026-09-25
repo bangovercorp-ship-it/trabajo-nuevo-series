@@ -2,6 +2,8 @@
 
 > El estado por rol está en `06-tablero-de-control.md`. Ahí se ve de un vistazo qué está cerrado y qué no. Este archivo es el plan de trabajo.
 
+> Los scripts que se nombran abajo están copiados en `codigo/` de este repositorio, con su índice. Las imágenes que hay que comparar están en `referencias/`.
+
 El trabajo en papel está hecho. **Lo que sigue es visual**, y es el motivo de abrir el chat nuevo: rehacer el pueblo y el taller con lo que dictó la oficina técnica, ahora en Ecuador.
 
 ## Bloque 1 · Planos y maqueta (0 créditos, todo por código)
