@@ -27,6 +27,8 @@ Serie vertical de TikTok para la marca **Bangover** (Ecuador, salud masculina; p
 | `04-oficinas-tecnicas.md` | Los cuatro equipos de especialistas y qué produjo cada uno |
 | `05-habilidades.md` | Índice de todo lo ejecutado y las reglas permanentes del cliente |
 | `06-tablero-de-control.md` | Los 13 roles del proyecto, cuáles están cerrados y qué falta en cada uno |
+| `08-proyecto-de-ciudad.md` | Puerto Candela entero: el estero, los cinco barrios, las secciones de calle y el parque. Cada dato etiquetado DATO, PROPUESTA o HIPÓTESIS |
+| `09-cinco-temporadas.md` | La auditoría de la temporada 1 y el plan de las cinco, con las cinco decisiones que faltan |
 | `prompts\` | Los siete prompts completos, listos para volver a pegar |
 | `codigo\` | Los scripts que ya existen: planos, maqueta 3D, prompts de generación y montaje |
 | `referencias\` | Todo lo ya generado, en JPG liviano, para ver qué hay sin gastar un crédito |
@@ -45,7 +47,7 @@ Serie vertical de TikTok para la marca **Bangover** (Ecuador, salud masculina; p
 
 ## La biblia de la serie
 
-Vive en un documento de claude.ai, con **siete** pestañas, y es la fuente de verdad de todo:
+Vive en un documento de claude.ai, con **ocho** pestañas, y es la fuente de verdad de todo:
 
 https://claude.ai/code/artifact/f3c702c2-8f22-45cf-8507-b80c80a3bb8d
 
@@ -58,5 +60,6 @@ https://claude.ai/code/artifact/f3c702c2-8f22-45cf-8507-b80c80a3bb8d
 | Escenarios | Planos, medidas, maqueta y vistas del pueblo, el taller, el bar y el pasaje |
 | Ecuador · taller y barrio | El expediente técnico del taller y del barrio |
 | Ecuador · biblia sociocultural | Cómo se habla, se come, se bromea y se vive en la costa del Guayas |
+| Plan de cinco temporadas | El arco completo: las 5 temporadas, sus 40 episodios y lo que cada una le enseña a Gallín |
 
 **Regla:** si algo de esta carpeta contradice a la biblia, manda la biblia. Y si se cambia algo importante, se actualiza la biblia en el mismo momento.
