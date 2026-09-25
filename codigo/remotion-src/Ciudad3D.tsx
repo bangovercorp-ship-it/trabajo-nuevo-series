@@ -744,8 +744,8 @@ export const VISTAS: Record<string, Vista> = {
   la_cuadra: {p: [92, 96, 300], t: [286, 4, 132], fov: 40, hora: 'tarde',
               foco: [270, 0, 150], radio: 260},
   // 6. la esquina: el taller y el bar enfrentados por la avenida
-  la_esquina: {p: [221, 6.0, 124], t: [266, 5.0, 142], fov: 62, hora: 'tarde',
-               foco: [258, 0, 136], radio: 180},
+  la_esquina: {p: [228, 5.6, 127], t: [259, 5.2, 149], fov: 64, hora: 'tarde',
+               foco: [256, 0, 140], radio: 170},
   // 7. la avenida, teleobjetivo: comprime la calle y el taller queda al fondo
   avenida: {p: [26, 4.6, 144], t: [560, 4.4, 128], fov: 26, hora: 'mediodia',
             foco: [280, 0, 136], radio: 340},
@@ -756,8 +756,8 @@ export const VISTAS: Record<string, Vista> = {
   parque: {p: [102, 17, 44], t: [178, 2.5, 94], fov: 50, hora: 'tarde',
            foco: [174, 0, 90], radio: 170},
   // 10. el mercado y la fila de la avenida
-  mercado: {p: [330, 4.4, 62], t: [278, 3.4, 42], fov: 58, hora: 'mediodia',
-            foco: [296, 0, 44], radio: 170},
+  mercado: {p: [356, 5.0, 64], t: [286, 3.2, 44], fov: 54, hora: 'mediodia',
+            foco: [300, 0, 44], radio: 170},
   // 11. la esquina de noche: los dos neones, que son la firma visual de la serie
   esquina_noche: {p: [219, 6.4, 122], t: [268, 5.2, 142], fov: 66, hora: 'noche',
                   foco: [258, 0, 134], radio: 190},
@@ -785,9 +785,9 @@ export const VERTICALES: Record<string, Vista> = {
   v_ciudad: {p: [860, 260, -380], t: [300, 0, 150], fov: 46, hora: 'tarde', foco: [300, 0, 130], radio: 700, niebla: 4200},
   v_avenida: {p: [103, 4.4, 142], t: [520, 7, 132], fov: 40, hora: 'mediodia', foco: [300, 0, 136], radio: 320},
   v_taller: {p: [257, 2.8, 126], t: [258, 6.0, 152], fov: 62, hora: 'tarde', foco: [258, 0, 148], radio: 130},
-  v_esquina: {p: [205, 5.8, 139], t: [262, 4.8, 133], fov: 58, hora: 'tarde', foco: [252, 0, 136], radio: 180},
+  v_esquina: {p: [231, 4.8, 126], t: [258, 5.6, 150], fov: 62, hora: 'tarde', foco: [256, 0, 140], radio: 170},
   v_parque: {p: [187, 3.8, 126], t: [172, 7.0, 88], fov: 60, hora: 'tarde', foco: [174, 0, 96], radio: 150},
-  v_esquina_noche: {p: [216, 5.0, 124], t: [266, 5.4, 144], fov: 64, hora: 'noche', foco: [258, 0, 136], radio: 175},
+  v_esquina_noche: {p: [223, 5.2, 125], t: [263, 5.2, 146], fov: 70, hora: 'noche', foco: [258, 0, 138], radio: 175},
   v_loma: {p: [-300, 52, -180], t: [320, 0, 170], fov: 42, hora: 'amanecer', foco: [180, 0, 60], radio: 680, niebla: 3000},
   v_estero: {p: [504, 44, 496], t: [612, 2, 674], fov: 44, hora: 'tarde', foco: [600, 0, 630], radio: 380, niebla: 4000},
 };

@@ -6,6 +6,9 @@
 - El elenco son **híbridos fotorrealistas con cara humana obligatoria** (por la sincronía de labios). Nada de cabeza de animal, nada de disfraz.
 - **El carro siempre está roto de verdad** y el arreglo se ve en cámara. El consejo ocurre mientras el taller trabaja, nunca en lugar de trabajar.
 - Método de escenarios, ya probado: **primero el plano con medidas, después la maqueta 3D, y solo entonces la imagen realista**, generada usando la vista de la maqueta como referencia. Así se acabaron las incoherencias.
+- **El pueblo entero está proyectado y construido en 3D**, con sus 24 tomas oficiales: `08-proyecto-de-ciudad.md`. Si un capítulo abre con la ciudad, abre desde una de esas y no desde otra. La maqueta usa semilla fija, así que la ciudad es reproducible entre capítulos.
+- **En el pueblo no hay otro edificio negro ónix ni otro verde botella.** El taller y el bar son los únicos, y por eso se reconocen desde cualquier ángulo y a cualquier hora.
+- **En las vistas de referencia no se dibuja gente**, a propósito: una figura humana mal hecha en la referencia se le contagia al video generado.
 - En Veo, las tomas con movimiento se generan con **cuadro inicial y final**, si no, el personaje cambia de ropa a mitad del clip.
 - Producto: Lázaro toda la temporada 1. **Nunca se promete que cure nada. Se recomienda, no se receta.**
 
@@ -34,7 +37,10 @@ Los dos nuevos **todavía no tienen hoja de personaje generada**. Es de lo prime
 | Hojas de personaje del elenco viejo | `gallin\03-hoja-tio-gallin.png` y siguientes |
 | Láminas de expresiones y poses | `gallin\laminas\` |
 | Planos por código (barrio, taller, bar, pasaje) | `planos_diseno\plano_urbano.py`, `plano_taller.py`, `plano_bar_pasaje.py` |
+| Las cuatro caras del taller y del bar | `planos_diseno\plano_taller_caras.py`, `plano_bar_caras.py` |
+| Territorio, secciones de vía y diseño del parque | `planos_diseno\plano_territorio.py`, `plano_secciones_viales.py`, `plano_parque.py` |
 | Maqueta 3D en Remotion + three.js | `remotion\src\Taller3D.tsx` y `Escenas3D.tsx` |
+| **Motor de render realista y la ciudad entera** | `remotion\src\realismo.tsx` y `Ciudad3D.tsx` |
 | Vistas realistas generadas desde la maqueta | `gallin\escenarios\desde-maqueta\` |
 | Prueba de escena del episodio 1 | `gallin\prueba-escena\` |
 | Spot de Lázaro terminado | `lazaro-spot.mp4` |

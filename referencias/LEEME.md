@@ -18,7 +18,7 @@ no para usar como referencia de generación.
 | `prueba-escena/` | Los cuadros de la prueba del episodio 1 | Vigentes como prueba de escala |
 | `planos-ecuador/` | Los 6 planos rehechos para Ecuador | **Vigentes.** Reemplazan a `planos/` |
 | `maqueta-ecuador/` | Las 7 vistas del taller y las 6 del bar y el pasaje, desde la maqueta nueva | **Vigentes.** Reemplazan a `maqueta/` |
-| `ciudad-ecuador/` | Las 8 vistas del barrio entero: aérea, cenital, la cuadra, la esquina, la avenida, la Calle Olmedo, el parque y la esquina de noche | **Vigentes** |
+| `ciudad-ecuador/` | **Las 24 vistas de Puerto Candela con material: 16 horizontales y 8 verticales** | **Vigentes.** Reemplazan a las 8 de bloques |
 
 ## Defectos que se ven en estas imágenes
 
@@ -55,3 +55,34 @@ tenga que inventar un lado, y traen la propuesta de materiales cara por cara.
 La geometría sale tal cual del plano urbano, y las casas usan una **semilla fija**:
 el mismo lote saca siempre la misma casa, del mismo alto y del mismo color. La ciudad
 es reproducible entre capítulos. Cambiar la semilla cambia el barrio entero.
+
+
+## Lo rehecho el 25 de septiembre, de noche
+
+`ciudad-ecuador/` se reemplaza entero. Las ocho vistas de bloques grises se cambian por
+**veinticuatro con material**: dieciséis horizontales y ocho verticales, que son las tomas
+oficiales del pueblo. Salen de `codigo/remotion-src/Ciudad3D.tsx` sobre el motor nuevo
+`realismo.tsx`, y cuestan 0 créditos: se vuelven a generar corriendo el render.
+
+Qué cambió respecto de la maqueta de bloques:
+
+- **Cielo físico** con el sol en su posición real y el cielo iluminando la escena, en vez
+  de una lámpara inventada. Cuatro horas: mediodía, tarde, amanecer y noche.
+- **Materiales**: enlucido con la humedad subiendo del pie del muro, zinc acanalado con su
+  relieve y su óxido, adoquín, lastre con las dos huellas de las llantas, asfalto.
+- **Techos a dos aguas**, que es lo que pide la biblia. Los de la maqueta vieja eran planos.
+- Rejas en toda la planta baja, cables cruzando la calle, tanque de agua y antena en la
+  azotea, y una de cada cinco casas de dos pisos con las varillas al aire.
+- El pueblo entero, no solo el barrio: el Estero Candela, las camaroneras, los arrozales,
+  el manglar, la Loma de la Cruz y los otros cuatro barrios.
+
+`planos-ecuador/` suma tres: el **territorio**, las **secciones de las cuatro calles** y el
+**diseño del Parque del Reloj**.
+
+**No hay personas en ninguna vista, a propósito.** Una figura humana mal hecha en la imagen
+de referencia se le contagia al video generado. Las personas entran después, en la
+generación, con su hoja de personaje.
+
+Estas vistas **todavía no son la imagen final**: son la referencia que obliga a la imagen
+final a respetar la ciudad. Los prompts para convertirlas están escritos en
+`codigo/vistas_ciudad.py` y cuestan unos 72 créditos las 24.
