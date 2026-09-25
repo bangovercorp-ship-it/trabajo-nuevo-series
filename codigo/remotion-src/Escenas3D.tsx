@@ -102,6 +102,30 @@ const Bar: React.FC = () => {
           <pointLight position={[x, 2.4, z]} color="#ff9a6a" intensity={5} distance={6} decay={1.6} />
         </group>
       ))}
+      {/* --- lo ecuatoriano del bar: no cambian las medidas, cambia como se vive --- */}
+      {/* reja corrediza, RECOGIDA contra el borde: el bar esta abierto. Cerrada taparia
+          la vista del taller desde la mesa de la ventana, que es el plano de Micaela. */}
+      {Array.from({length: 20}).map((_, i) => (
+        <Caja key={i} x={[6.55 + i * 0.045, 6.58 + i * 0.045]} y={[0.9, 2.8]} z={[20.04, 20.08]} c="#9fb0a6" />
+      ))}
+      {/* porton metalico enrollable, recogido: por el calor se abre de par en par */}
+      <Caja x={[6.4, 11.1]} y={[2.82, 3.0]} z={[20.0, 20.2]} c="#7b8288" />
+      {/* ventilador de pie apuntando a la barra */}
+      <Cil p={[3.7, 0.5, 12.8]} r={0.05} h={1.0} c="#4a4a4a" />
+      <Cil p={[3.7, 1.02, 12.8]} r={0.34} h={0.12} c="#c9c4b6" />
+      {/* hielera: la cerveza grande y helada, en el extremo de la barra */}
+      <Caja x={[2.4, 3.6]} y={[0, 0.85]} z={[17.3, 18.3]} c="#5d8fb3" />
+      <Caja x={[2.45, 3.55]} y={[0.85, 0.92]} z={[17.35, 18.25]} c="#cfe2ee" />
+      {/* tele colgada en la esquina: cuando hay partido, la rocola se calla */}
+      <Caja x={[11.2, 11.3]} y={[2.2, 2.85]} z={[18.4, 19.4]} c="#2b2b2b" />
+      <Caja x={[11.3, 11.34]} y={[2.26, 2.79]} z={[18.46, 19.34]} c="#6f8ea0" e="#8fb3c8" ei={0.5} />
+      {/* dos mesas de plastico que salen a la vereda al atardecer */}
+      {[[3.6, 21.3], [5.3, 21.3]].map(([x, z]) => (
+        <group key={`${x}${z}`}>
+          <Cil p={[x, 0.68, z]} r={0.38} h={0.05} c="#e8e3d6" />
+          <Cil p={[x, 0.34, z]} r={0.05} h={0.68} c="#dcd7c9" />
+        </group>
+      ))}
       {/* vereda, avenida y el taller enfrente (a 40 m) */}
       <Caja x={[-30, 42]} y={[-0.08, -0.03]} z={[20.25, 23]} c="#6b6b6b" />
       <Caja x={[-30, 42]} y={[-0.12, -0.08]} z={[23, 59]} c="#1c1d20" />
@@ -111,7 +135,9 @@ const Bar: React.FC = () => {
       <Caja x={[8, 22]} y={[4.9, 6.2]} z={[59.9, 60]} c="#0d0d0d" />
       <Caja x={[8.5, 21.5]} y={[5.3, 5.8]} z={[59.88, 59.9]} c="#d4ad52" e="#c49a3a" ei={0.8} />
       <GalloNeon p={[15, 6.2, 59.85]} rotY={Math.PI} />
-      <Caja x={[9, 14]} y={[0, 1.2]} z={[59.9, 60]} c="#ffb35c" e="#ff9a2a" ei={1.5} />
+      <Caja x={[0, 24]} y={[0, 0.4]} z={[59.88, 60]} c="#2f2c29" />
+      {[9, 12, 18.5, 21.5].map((xx) => <Cil key={xx} p={[xx, 7.6, 60.5]} r={0.45} h={0.5} c="#b9c0c6" />)}
+      <Caja x={[9, 14]} y={[0.4, 1.6]} z={[59.9, 60]} c="#ffb35c" e="#ff9a2a" ei={1.5} />
       <pointLight position={[11.5, 1, 58]} color="#ffae5c" intensity={6} distance={10} />
     </group>
   );

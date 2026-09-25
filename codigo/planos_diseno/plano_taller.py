@@ -175,8 +175,11 @@ for y0, y1, nombre in bahias:
     carro(16.2, y0 + 0.95, 21.3, y1 - 0.35)
     txt(18.75, y0 + 0.12, nombre, f_peq, TINTA, "mt")
     if "2 columnas" in nombre:
-        for xx in (15.8, 21.6):
-            rect(xx, (y0 + y1) / 2 - 0.15, xx + 0.35, (y0 + y1) / 2 + 0.15, BRASA, None)
+        # Los dos postes van a los COSTADOS del carro, a media eslora: es lo que
+        # sujeta un elevador de dos columnas. Separacion entre postes: 2,90 m.
+        yc = (y0 + y1) / 2 + 0.3                      # eje del carro dentro de la bahia
+        for yy in (yc - 1.45, yc + 1.45):
+            rect(18.3, yy - 0.15, 18.9, yy + 0.15, BRASA, None)
     if "4 postes" in nombre:
         for (xx, yy) in [(15.6, y0 + 0.25), (21.6, y0 + 0.25), (15.6, y1 - 0.55), (21.6, y1 - 0.55)]:
             rect(xx, yy, xx + 0.3, yy + 0.3, BRASA, None)

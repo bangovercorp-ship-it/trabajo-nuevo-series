@@ -1,4 +1,7 @@
 // Maqueta 3D del Taller Gallardo, sacada de la planta (02-planta-taller.png). Medidas en metros.
+// Version Ecuador: las nueve zonas nuevas, el nivel +0,40 con sus dos rampas y las
+// turbinas de extraccion en la cubierta. El piso interior sigue en y=0 y lo que baja
+// es la vereda, para no mover ni un objeto de los que ya estaban colocados.
 // Ejes: x = oeste(0) -> este(24); z = avenida(0) -> pasaje(30); y = altura.
 import React, {useLayoutEffect} from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
@@ -30,6 +33,28 @@ const Carro: React.FC<{x0: number; z: number; y0?: number; c: string}> = ({x0, z
     {[x0 + 0.85, x0 + 3.65].map((xx) => [z - 0.82, z + 0.82].map((zz) => <Rueda key={`${xx}${zz}`} p={[xx, y0 + 0.32, zz]} />))}
   </group>
 );
+
+// carro con el eje largo en z, para la bahia 0 de recepcion
+const CarroZ: React.FC<{x: number; z0: number; c: string}> = ({x, z0, c}) => (
+  <group>
+    <Caja x={[x - 0.9, x + 0.9]} y={[0.3, 1.05]} z={[z0, z0 + 4.5]} c={c} />
+    <Caja x={[x - 0.8, x + 0.8]} y={[1.05, 1.55]} z={[z0 + 1.1, z0 + 3.5]} c="#2c3440" o={0.85} />
+    {[z0 + 0.85, z0 + 3.65].map((zz) => [x - 0.82, x + 0.82].map((xx) => <Rueda key={`${xx}${zz}`} p={[xx, 0.32, zz]} eje="x" />))}
+  </group>
+);
+
+// rampa 1:10 que salva los 0,40 m entre la vereda y el piso interior
+const Rampa: React.FC<{x: [number, number]; z: [number, number]; eje: 'x' | 'z'}> = ({x, z, eje}) => {
+  const lx = x[1] - x[0], lz = z[1] - z[0];
+  const largo = eje === 'z' ? lz : lx;
+  const ang = Math.atan(0.4 / largo);
+  return (
+    <mesh position={[(x[0] + x[1]) / 2, -0.2, (z[0] + z[1]) / 2]} rotation={eje === 'z' ? [-ang, 0, 0] : [0, 0, ang]} receiveShadow>
+      <boxGeometry args={[eje === 'z' ? lx : Math.hypot(lx, 0.4), 0.08, eje === 'z' ? Math.hypot(lz, 0.4) : lz]} />
+      <meshStandardMaterial color="#6b645c" roughness={0.9} />
+    </mesh>
+  );
+};
 
 const Lampara: React.FC<{x: number; z: number}> = ({x, z}) => (
   <group>
@@ -65,10 +90,26 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
     <group>
       {/* piso de resina y lineas amarillas */}
       <Caja x={[0, 24]} y={[-0.05, 0]} z={[0, 30]} c="#8e9195" />
-      <Caja x={[-6, 30]} y={[-0.1, -0.05]} z={[-14, 0]} c="#3b3b3d" />
+      {/* la vereda y la calle quedan 0,40 m por debajo del piso interior */}
+      <Caja x={[-6, 30]} y={[-0.45, -0.4]} z={[-14, 0]} c="#3b3b3d" />
+      <Caja x={[-8, 0]} y={[-0.45, -0.4]} z={[0, 32]} c="#3b3b3d" />
+      <Caja x={[0, 24]} y={[-0.4, 0]} z={[-0.3, 0]} c="#2f2c29" />
+      <Caja x={[-0.3, 0]} y={[-0.4, 0]} z={[0, 30]} c="#2f2c29" />
+      {/* zona 4: canaleta perimetral con rejilla, y la trampa de grasas */}
+      {[[7.7, 0.6, 7.7, 20.8], [14.8, 0.6, 14.8, 20.8], [0.6, 20.8, 22.6, 20.8]].map(([ax, az, bx, bz], k) => (
+        <Caja key={k} x={[ax - 0.09, bx + 0.09]} y={[-0.03, 0.005]} z={[az - 0.09, bz + 0.09]} c="#6d6760" />
+      ))}
+      <Caja x={[5.5, 7.0]} y={[-0.04, 0.005]} z={[19.3, 20.3]} c="#8d857a" />
+      {/* rampas 1:10 de 4,00 m en los dos portones */}
+      <Rampa x={[9, 14]} z={[0, 4]} eje="z" />
+      <Rampa x={[0, 4]} z={[16, 20.5]} eje="x" />
       {[1, 5, 9, 13.5, 17, 20.5].map((zz) => <Caja key={zz} x={[15, 22.5]} y={[0, 0.01]} z={[zz - 0.05, zz + 0.05]} c="#e0b422" />)}
       <Caja x={[14.95, 15.05]} y={[0, 0.01]} z={[1, 20.5]} c="#e0b422" />
       <Caja x={[7.45, 7.55]} y={[0, 0.01]} z={[0, 15.8]} c="#e0b422" />
+      {/* zona 1: bahia 0 de recepcion, pintada contra el borde oeste del pasillo */}
+      <Caja x={[7.6, 9.5]} y={[0, 0.012]} z={[5.5, 10]} c="#2aa198" />
+      <Caja x={[7.72, 9.38]} y={[0, 0.02]} z={[5.62, 9.88]} c="#e9e3d3" />
+      <CarroZ x={8.55} z0={5.75} c="#c9a227" />
 
       {/* muros: crema arriba, onix hasta 2,40 y filete dorado */}
       {muros.map(([x0, x1, z0, z1], k) => (
@@ -88,9 +129,19 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       </mesh>
 
       {/* losa del segundo piso sobre la franja oeste, y techo */}
-      <Caja x={[0, 7.5]} y={[5.5, 5.75]} z={[0, 21]} c="#cfcac0" />
+      {/* la losa del segundo piso tambien se quita en la vista cenital, si no tapa la franja oeste */}
+      {!sinTecho && <Caja x={[0, 7.5]} y={[5.5, 5.75]} z={[0, 21]} c="#cfcac0" />}
       {!sinTecho && <Caja x={[0, 24]} y={[H, H + 0.2]} z={[0, 30]} c="#4a4a4a" />}
       {!sinTecho && [4, 11, 18, 25].map((zz) => <Caja key={zz} x={[9, 22]} y={[H - 0.02, H]} z={[zz, zz + 1.2]} c="#ffffff" e="#f4f6ff" />)}
+      {!sinTecho && ([[9, 6], [12, 14], [18.5, 6], [21.5, 14]] as [number, number][]).map(([xx, zz]) => (
+        <group key={`${xx}-${zz}`}>
+          <Caja x={[xx - 0.12, xx + 0.12]} y={[H + 0.2, H + 0.45]} z={[zz - 0.12, zz + 0.12]} c="#7d858c" />
+          <mesh position={[xx, H + 0.7, zz]} castShadow>
+            <cylinderGeometry args={[0.45, 0.45, 0.5, 16]} />
+            <meshStandardMaterial color="#b9c0c6" metalness={0.5} roughness={0.45} />
+          </mesh>
+        </group>
+      ))}
       {[3, 7, 11, 15, 19].map((zz) => <Caja key={zz} x={[15.5, 22]} y={[5.2, 5.25]} z={[zz - 0.06, zz + 0.06]} c="#ffffff" e="#ffffff" />)}
 
       {/* recepcion, sala, escritorio de Renzo */}
@@ -110,7 +161,7 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       {/* bahias: dos elevadores de 2 columnas, uno de 4 postes, dos en piso */}
       {[[1, 5], [5, 9]].map(([z0, z1], k) => (
         <group key={k}>
-          {[z0 + 0.15, z1 - 0.5].map((zz) => <Caja key={zz} x={[18.4, 18.75]} y={[0, 2.9]} z={[zz, zz + 0.35]} c={ROJO} />)}
+          {[(z0 + z1) / 2 - 1.62, (z0 + z1) / 2 + 1.27].map((zz) => <Caja key={zz} x={[18.4, 18.75]} y={[0, 2.9]} z={[zz, zz + 0.35]} c={ROJO} />)}
           <Carro x0={16.4} z={(z0 + z1) / 2} y0={k === 0 ? 1.8 : 0.1} c={k === 0 ? '#1f3a5f' : '#e8e8e6'} />
         </group>
       ))}
@@ -120,7 +171,10 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       <Carro x0={16.5} z={11.25} y0={1.25} c="#8e1c1c" />
       <Carro x0={16.4} z={15.25} c="#6f7378" />
       {!bahia5Vacia && <Carro x0={16.4} z={18.75} c="#141414" />}
-      {[3, 7, 11.2, 15.2, 18.7].map((zz) => <Caja key={zz} x={[22.9, 23.6]} y={[0, 1.0]} z={[zz - 0.4, zz + 0.4]} c={ROJO} />)}
+      {[3, 11.2, 15.2, 18.7].map((zz) => <Caja key={zz} x={[22.9, 23.6]} y={[0, 1.0]} z={[zz - 0.4, zz + 0.4]} c={ROJO} />)}
+      <Caja x={[22.6, 23.7]} y={[0, 1.15]} z={[5.6, 7.6]} c="#2f6f6a" />
+      <Caja x={[22.62, 23.0]} y={[1.15, 1.45]} z={[5.9, 6.2]} c="#b3261e" />
+      <Caja x={[23.2, 23.6]} y={[1.15, 1.45]} z={[5.9, 6.2]} c="#2e5aa8" />
 
       {/* franja sur: rincon fino, cafe, motos, almacen, compresor, llantas */}
       <Caja x={[1.5, 4.8]} y={[0, 0.9]} z={[21.3, 22.0]} c="#4a4a4a" />
@@ -128,13 +182,25 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       <Caja x={[1.5, 4.2]} y={[0, 0.95]} z={[24.3, 24.9]} c="#6b4a2e" />
       <Caja x={[1.7, 2.2]} y={[0.95, 1.4]} z={[24.4, 24.8]} c="#c9c9c9" />
       <Caja x={[0.1, 0.13]} y={[1.4, 1.9]} z={[25.2, 25.6]} c="#f4f1ea" />
-      {[[6.2, 21.7], [8.9, 21.7], [6.2, 28.3], [8.9, 28.3]].map(([xx, zz]) => (
+      {[[6.2, 25.0], [8.9, 25.0], [6.2, 28.2], [8.9, 28.2]].map(([xx, zz]) => (
         <group key={`${xx}${zz}`}>
           <Caja x={[xx + 0.3, xx + 1.9]} y={[0.35, 0.8]} z={[zz + 0.2, zz + 0.5]} c="#2b2b2b" />
           <Rueda p={[xx + 0.3, 0.3, zz + 0.35]} r={0.3} ancho={0.1} />
           <Rueda p={[xx + 1.9, 0.3, zz + 0.35]} r={0.3} ancho={0.1} />
         </group>
       ))}
+      {/* zona 3: residuos peligrosos, y el lavado de piezas separado de las motos */}
+      <Caja x={[5.45, 5.55]} y={[0, 3.0]} z={[21, 30]} c={CREMA} />
+      <Caja x={[7.95, 8.05]} y={[0, 1.3]} z={[21, 24]} c={CREMA} />
+      <Caja x={[5.5, 11.5]} y={[0, 1.3]} z={[23.95, 24.05]} c={CREMA} />
+      <Caja x={[5.55, 8.0]} y={[0, 0.06]} z={[21.05, 24]} c="#2aa198" />
+      {[5.95, 6.65, 7.35].map((xx) => (
+        <mesh key={xx} position={[xx, 0.45, 22.9]} castShadow>
+          <cylinderGeometry args={[0.28, 0.28, 0.9, 18]} />
+          <meshStandardMaterial color="#c0713a" roughness={0.8} />
+        </mesh>
+      ))}
+      <Caja x={[8.6, 10.9]} y={[0, 0.9]} z={[21.6, 23.4]} c="#7d8a7d" />
       <Caja x={[11.5, 17]} y={[0, 3.0]} z={[20.95, 21.05]} c={CREMA} />
       <Caja x={[11.5, 17]} y={[0, 2.4]} z={[20.9, 21.0]} c={ONIX} />
       <Caja x={[11.5, 11.6]} y={[0, 3.0]} z={[21, 30]} c={CREMA} />
@@ -142,9 +208,11 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       <Caja x={[11.5, 17]} y={[0, 3.0]} z={[24.95, 25.05]} c={CREMA} />
       <Caja x={[16.9, 17.0]} y={[0, 3.0]} z={[21, 24]} c={CREMA} />
       <mesh position={[13.0, 1.0, 27.5]} rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.35, 0.35, 1.6, 20]} /><meshStandardMaterial color={ROJO} /></mesh>
-      <Caja x={[18.2, 19.0]} y={[0, 1.0]} z={[22.0, 22.8]} c="#2e5aa8" />
-      <Caja x={[20.6, 21.4]} y={[0, 1.1]} z={[22.0, 22.8]} c="#2e5aa8" />
-      <Rueda p={[18.6, 1.15, 22.4]} r={0.33} ancho={0.22} eje="x" />
+      {/* desmontadora y balanceadora contra las paredes: el centro de la zona de
+          llantas queda libre porque por ahi pasa la camara hacia la puerta roja */}
+      <Caja x={[17.3, 18.1]} y={[0, 1.0]} z={[22.0, 22.8]} c="#2e5aa8" />
+      <Caja x={[22.7, 23.5]} y={[0, 1.1]} z={[22.0, 22.8]} c="#2e5aa8" />
+      <Rueda p={[17.7, 1.15, 22.4]} r={0.33} ancho={0.22} eje="x" />
 
       {/* estanteria de llantas sobre rieles */}
       <Caja x={[11.5, 24]} y={[0, 0.03]} z={[24.1, 24.2]} c="#777" />
@@ -162,7 +230,8 @@ const TALLER = ({puertaAbierta, sinTecho, bahia5Vacia}: {puertaAbierta: boolean;
       <Caja x={[17, 19.9]} y={[0, 2.4]} z={[25.07, 25.1]} c={ONIX} />
       <Caja x={[21.1, 24]} y={[0, 2.4]} z={[25.07, 25.1]} c={ONIX} />
       <Caja x={[19.9, 21.1]} y={[0, 2.4]} z={[25.0, 25.12]} c="#9b1f1f" />
-      <Caja x={[20.35, 20.65]} y={[1.65, 1.85]} z={[25.05, 25.1]} c={ORO} e="#6b4e12" />
+      {/* la corona va DELANTE de la cara de la puerta (z=25,0), no dentro: asi se ve */}
+      <Caja x={[20.32, 20.68]} y={[1.62, 1.88]} z={[24.94, 25.0]} c={ORO} e="#6b4e12" />
       <Lampara x={20.5} z={23.4} />
       <Caja x={[16.9, 17.0]} y={[0, 5.5]} z={[25.3, 30]} c={CREMA} />
 

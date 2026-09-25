@@ -111,7 +111,7 @@ d.line([P(6.5, 20), P(11, 20)], fill="#9fc3d6", width=9)
 for k in range(19):
     xx = 6.6 + k * 0.23
     d.line([P(xx, 19.82), P(xx, 20.18)], fill=NUEVO, width=2)
-T(9.5, 19.6, "reja corrediza", f_min, NUEVO)
+T(9.5, 19.6, "reja corrediza · se recoge de día", f_min, NUEVO)
 
 # --- la vereda: donde de verdad pasa la escena ------------------------------------
 R(-1.0, 20.2, 13.0, 22.0, "#ded8cc", None)
@@ -177,7 +177,7 @@ e.text(Q(6.3, 2.91), "portón enrollable recogido", font=f_min, fill="#cfe0d4", 
 for k in range(20):
     xx = 6.6 + k * 0.225
     e.line([Q(xx, 0.9), Q(xx, 2.8)], fill="#9fb0a6", width=2)
-e.text(Q(8.75, 0.62), "reja corrediza", font=f_min, fill="#cfe0d4", anchor="mm")
+e.text(Q(8.75, 0.62), "reja corrediza · de día va recogida", font=f_min, fill="#cfe0d4", anchor="mm")
 # neon: gata sentada + LA GATA
 # El neon mide 4,80 x 0,55 m y va a 3,00 m de altura (biblia). La gata ocupa el
 # extremo izquierdo de esa banda y el resto es el rotulo. Silueta llena, que es lo
