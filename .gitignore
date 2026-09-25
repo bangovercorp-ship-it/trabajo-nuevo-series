@@ -1,0 +1,7 @@
+*.mp4
+*.wav
+*.mp3
+*.png
+*.jpg
+.secretos/
+*.env
