@@ -6,7 +6,20 @@
 
 El trabajo en papel está hecho. **Lo que sigue es visual**, y es el motivo de abrir el chat nuevo: rehacer el pueblo y el taller con lo que dictó la oficina técnica, ahora en Ecuador.
 
-## Bloque 1 · Planos y maqueta (0 créditos, todo por código)
+## Bloque 1 · Planos y maqueta (0 créditos, todo por código) · CERRADO
+
+Está hecho, y de paso se hizo lo que faltaba del pueblo entero. Ver `08-proyecto-de-ciudad.md`.
+
+| Qué | Dónde |
+| --- | --- |
+| Plano urbano, planta del taller, caras del taller y del bar, planta del bar y del pasaje | `codigo/planos_diseno/` |
+| Territorio de Puerto Candela, secciones de las cuatro calles, diseño del Parque del Reloj | `codigo/planos_diseno/` |
+| Motor de render realista: cielo físico, texturas por código, techos a dos aguas, árboles, cables | `codigo/remotion-src/realismo.tsx` |
+| La ciudad entera: 16 tomas horizontales y 8 verticales | `codigo/remotion-src/Ciudad3D.tsx` |
+
+Lo que sigue abierto de este bloque: **nada por código.** Las vistas ya sirven de referencia.
+
+### Lo que decía este bloque, para no perder el historial
 
 1. **Plano urbano de El Cruce, versión Ecuador.** Nombres nuevos de calles, la vulcanizadora, la tercena, la picantería, la UPC, la gasolinera. Script a modificar: `planos_diseno\plano_urbano.py`.
 2. **Planta del taller con las nueve zonas que faltaban.** Bahía 0 de recepción, puesto de diagnóstico, área de residuos peligrosos, canaleta con trampa de grasas, extracción de gases, aire acondicionado, toldo de espera, zona limpia de electrónica, control de calidad. Más el piso a +0,40 m con rampa por la inundación. Script: `plano_taller.py`.
@@ -15,14 +28,20 @@ El trabajo en papel está hecho. **Lo que sigue es visual**, y es el motivo de a
 
 Todo esto está especificado zona por zona en la pestaña **Ecuador · taller y barrio** de la biblia.
 
-## Bloque 2 · Imágenes (unos 42 créditos)
+## Bloque 2 · Imágenes (unos 99 créditos) · ESPERA LA ORDEN
 
 | Qué | Cuántas | Créditos |
 | --- | --- | --- |
 | Vistas realistas del taller desde la maqueta | 6 | 18 |
 | Fachada de día y de noche | 2 | 6 |
+| Las cuatro caras del taller | 4 | 12 |
+| Las cuatro caras del bar | 4 | 12 |
+| Interiores del bar y el pasaje | 6 | 18 |
 | Hojas de personaje de Yadira (garza) y Kevin (mono) | 2 | 6 |
-| Exteriores del pueblo: la vía, la calle de los mecánicos, el mercado, el malecón | 4 | 12 |
+| La ciudad: aérea, cuadra, esquina de día y de noche, avenida | 5 | 15 |
+| Exteriores del pueblo: la vía, la calle de los mecánicos, el mercado, el muelle | 4 | 12 |
+
+Antes de gastar los 99 conviene resolver el plumaje de Gallín y la nariz de Porfirio: se arrastran a cada imagen nueva.
 
 Regla que no se salta: **cada imagen se genera con la vista de la maqueta o el plano como referencia.**
 
@@ -48,3 +67,4 @@ Con todo lo anterior listo: desglosar el guion en tomas, generar cuadros, genera
 - La nariz de Porfirio.
 - El taller de ladrillo en la vista desde la ventana del bar: tiene que ser negro ónix.
 - Las columnas de elevador inventadas en dos vistas de la maqueta.
+- Las imágenes de Escenarios en la biblia siguen siendo las de Perú. Se reemplazan cuando se dé la orden de generar.

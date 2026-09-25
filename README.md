@@ -18,6 +18,7 @@ Documentación de trabajo de **El Taller del Tío Gallín**, serie vertical para
 | `04-oficinas-tecnicas.md` | Los equipos de especialistas y qué produjo cada uno |
 | `05-habilidades.md` | Todo lo ejecutado y las reglas permanentes |
 | `06-tablero-de-control.md` | Los 13 roles del proyecto y su estado |
+| `08-proyecto-de-ciudad.md` | **El pueblo entero: territorio, barrios, cada calle, el parque, el color y las tomas oficiales** |
 | `prompts/` | Los siete prompts completos, listos para reusar |
 | `codigo/` | Los scripts que ya existen: planos con PIL, maqueta 3D en Remotion, prompts de generación y montaje |
 | `referencias/` | Las 69 imágenes ya generadas, en JPG liviano, con su vigencia y sus defectos anotados |
