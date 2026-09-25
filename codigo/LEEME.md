@@ -47,6 +47,22 @@ En `Taller3D.tsx` está el hallazgo que costó encontrar: la estantería de llan
 con el almacén al correrse. Se achicó el almacén y se dejó 1 m libre para el riel. Si la
 maqueta se escribe de cero, ese error vuelve.
 
+## El episodio 1
+
+`episodio1.py` tiene los once prompts de cuadro y los ocho de movimiento del episodio 1, con
+los bloques comunes de mundo, estilo y continuidad ya pegados, y la tabla de montaje con el
+segundo de entrada de cada toma y la palabra que va en oro.
+
+```bash
+python episodio1.py costo      # que falta y cuanto cuesta, sin gastar un credito
+python episodio1.py cuadros    # los once cuadros
+python episodio1.py clips      # los ocho clips, cada uno desde su cuadro
+python episodio1.py t1a t2     # solo esas claves
+```
+
+Salta solo las tomas cuya referencia no existe todavia, en vez de generar algo mal. Las
+tomas 1 y 7 llevan cuadro inicial y final porque la camara se mueve.
+
 ## El promocional del bar
 
 | Archivo | Qué contiene |
