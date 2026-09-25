@@ -6,6 +6,7 @@
 - El elenco son **híbridos fotorrealistas con cara humana obligatoria** (por la sincronía de labios). Nada de cabeza de animal, nada de disfraz.
 - **El carro siempre está roto de verdad** y el arreglo se ve en cámara. El consejo ocurre mientras el taller trabaja, nunca en lugar de trabajar.
 - Método de escenarios, ya probado: **primero el plano con medidas, después la maqueta 3D, y solo entonces la imagen realista**, generada usando la vista de la maqueta como referencia. Así se acabaron las incoherencias.
+- **La serie son cinco temporadas y el final está escrito**, sembrado desde el episodio 1: Gallín dice la contraseña y Porfirio le abre la puerta. Gallín no muere. Ver `09-cinco-temporadas.md` y la pestaña *Plan de cinco temporadas* de la biblia.
 - **El pueblo entero está proyectado y construido en 3D**, con sus 24 tomas oficiales: `08-proyecto-de-ciudad.md`. Si un capítulo abre con la ciudad, abre desde una de esas y no desde otra. La maqueta usa semilla fija, así que la ciudad es reproducible entre capítulos.
 - **En el pueblo no hay otro edificio negro ónix ni otro verde botella.** El taller y el bar son los únicos, y por eso se reconocen desde cualquier ángulo y a cualquier hora.
 - **En las vistas de referencia no se dibuja gente**, a propósito: una figura humana mal hecha en la referencia se le contagia al video generado.

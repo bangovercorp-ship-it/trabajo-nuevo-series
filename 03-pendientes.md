@@ -53,6 +53,12 @@ El que está entregado es de Lima. Hay que rehacerlo en la costa ecuatoriana: ba
 
 Elegir el reparto completo en ElevenLabs, con **acento costeño ecuatoriano**, no neutro latino. Gallín, Porfirio, Toribio, Renzo, Micaela, Aurora, Fausto, Yadira y Kevin.
 
+## Bloque 4b · Los guiones · CERRADO en papel
+
+La temporada 1 está auditada y corregida, y las temporadas 2 a 5 están escritas: 32 episodios nuevos, cada uno con su falla real y su pista. Ver `09-cinco-temporadas.md`.
+
+Lo que queda abierto de este bloque son **cinco decisiones del dueño** y **seis validaciones** con una persona de la costa. Están listadas al final de ese archivo. Ninguna cuesta créditos; todas bloquean escritura fina.
+
 ## Bloque 5 · Producir el episodio 1
 
 Con todo lo anterior listo: desglosar el guion en tomas, generar cuadros, generar clips con cuadro inicial y final, montar con sonido real y subtítulos.

@@ -9,10 +9,10 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 | # | Rol | Estado | Qué falta para el check |
 | --- | --- | --- | --- |
 | 1 | **Creador de la serie** | ✅ | Nada. Biblia aprobada, mudada a Ecuador y corregida: el vehículo siempre está roto de verdad y el trabajo se ve en cámara |
-| 2 | **Guionista de personajes** | ✅ | Nada. Fichas profundas, tabla de cómo habla cada uno con lo que nunca diría, y los dos nuevos con matriz completa |
-| 3 | **Guionista de la temporada** | ✅ | Los 8 guiones están escritos, migrados a Ecuador, y cada uno lleva su falla técnica real con su orden de diagnóstico. El desglose en tomas es del rol 7 |
-| 4 | **Psicólogo del consumidor y marketing** | 🔄 | El estándar de sesgos existe y se aplicó al promocional, pero nunca se pasó por la serie episodio por episodio: gancho, permanencia y motivo para comentar de cada uno |
-| 5 | **Revisor de cumplimiento** | ❌ | **Bloquea la publicación.** Ver el apartado de abajo |
+| 2 | **Guionista de personajes** | 🔄 | Fichas profundas y matrices completas. **Lo nuevo:** Yadira ya tiene episodio propio (el 5) y a Kevin se le propuso herida —los papás en España—. Esa herida es HIPÓTESIS y la tiene que validar el rol 13 |
+| 3 | **Guionista de la temporada** | ✅ | Los 8 guiones escritos, migrados a Ecuador y auditados: 8 no conformidades corregidas. **Y el plan de las cinco temporadas está cerrado**, con los 32 episodios de la 2 a la 5 y el final escrito. Ver `09-cinco-temporadas.md`. El desglose en tomas es del rol 7 |
+| 4 | **Psicólogo del consumidor y marketing** | ✅ | Pasó episodio por episodio. De ahí salieron las cuatro correcciones que más valen: el cliente que vuelve en el fondo de cada episodio, la bolsa repetida sin explicar, las cinco mecánicas de comentario rotando, y la regla que protege a la marca en la temporada 3: **lo que se critica no es cobrar, es prometer** |
+| 5 | **Revisor de cumplimiento** | ❌ | **Bloquea la publicación.** Ver el apartado de abajo. Y ahora son cinco temporadas: cada línea donde aparezca un producto se revisa temporada por temporada, incluidos los que se abran en el gabinete |
 | 6 | **Director de arte** | 🔄 | La propuesta de color y materiales del pueblo está cerrada y construida en 3D. Faltan las hojas de personaje de Yadira (garza) y Kevin (mono), y las imágenes de escenarios siguen siendo las peruanas: se reemplazan cuando se dé la orden de generar |
 | 7 | **Director de cine** | 🔄 | Existe el método y una prueba de escena, pero falta la lista de planos del episodio 1 y la continuidad entre tomas |
 | 8 | **Director de voces** | 🔄 | La clave funciona y hay 23.736 caracteres hasta el 25 de octubre. Falta elegir el reparto **con acento costeño ecuatoriano**, no neutro latino |
