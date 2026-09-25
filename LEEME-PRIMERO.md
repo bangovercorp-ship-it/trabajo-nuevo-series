@@ -30,6 +30,7 @@ Serie vertical de TikTok para la marca **Bangover** (Ecuador, salud masculina; p
 | `08-proyecto-de-ciudad.md` | Puerto Candela entero: el estero, los cinco barrios, las secciones de calle y el parque. Cada dato etiquetado DATO, PROPUESTA o HIPÓTESIS |
 | `09-cinco-temporadas.md` | La auditoría de la temporada 1 y el plan de las cinco, con las cinco decisiones que faltan |
 | `10-analisis-de-cuentas-tiktok.md` | Cómo trabajan las cuentas de series con IA: la red de cuentas, el formato de series cortas de TikTok y una serie desarmada |
+| `11-que-falta-para-produccion.md` | La auditoría que separa lo que falta para **producir** de lo que falta para **publicar**, con el orden y los costos |
 | `prompts\` | Los siete prompts completos, listos para volver a pegar |
 | `codigo\` | Los scripts que ya existen: planos, maqueta 3D, prompts de generación y montaje |
 | `referencias\` | Todo lo ya generado, en JPG liviano, para ver qué hay sin gastar un crédito |

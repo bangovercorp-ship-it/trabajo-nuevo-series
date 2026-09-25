@@ -1,6 +1,6 @@
 # Tablero de control · 13 roles
 
-Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este es el tablero que manda: si un rol no tiene check, la serie no está lista por ese lado.
+Actualizado el 25 de septiembre de 2026. La auditoría de qué falta para producir está en `11-que-falta-para-produccion.md`. Este es el tablero que manda: si un rol no tiene check, la serie no está lista por ese lado.
 
 **Leyenda:** ✅ cerrado · 🔄 a medias · ❌ sin empezar
 
@@ -17,7 +17,7 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 | 7 | **Director de cine** | 🔄 | Existe el método y una prueba de escena, pero falta la lista de planos del episodio 1 y la continuidad entre tomas |
 | 8 | **Director de voces** | 🔄 | La clave funciona y hay 23.736 caracteres hasta el 25 de octubre. Falta elegir el reparto **con acento costeño ecuatoriano**, no neutro latino |
 | 9 | **Editor y sonido** | ✅ | Nada, y mejoró: al estándar se le sumó el corte sobre la grilla de golpes de la música, probado en el promocional del bar |
-| 10 | **Estratega de TikTok** | ❌ | Cuenta, nombre de la serie en Ecuador, frecuencia de publicación, orden de estreno, uso del audio original y plan de comentarios |
+| 10 | **Estratega de TikTok** | 🔄 | **Avanzó el 25 de septiembre con datos reales, no suposiciones:** cuatro cuentas de series con IA desarmadas y una serie medida por dentro, en `10-analisis-de-cuentas-tiktok.md`. De ahí salió que 63 s por episodio es el largo del mercado y que el episodio 1 debe ser más corto. Falta lo administrativo: cuenta, nombre de la serie en Ecuador, frecuencia, orden de estreno, y decidir entre publicación normal y el formato de series cortas de TikTok |
 
 ## Los roles que nacieron con los prompts nuevos
 
