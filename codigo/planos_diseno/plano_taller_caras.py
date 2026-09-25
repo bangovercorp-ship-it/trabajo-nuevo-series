@@ -31,15 +31,11 @@ import math
 
 from PIL import Image, ImageDraw
 
-from comun import destino, fuente
+from comun import (AGUA, BLOQUE, BRASA, CREMA, Elevacion, NUEVO, ONIX, ORO,
+                   TINTA, VEREDA, ZINC, destino, fuente)
 
 f_tit, f_sub = fuente("sans_bold", 40), fuente("sans", 20)
 f_cara, f_med, f_peq, f_min = fuente("sans_bold", 26), fuente("sans", 15), fuente("sans", 13), fuente("sans", 11)
-
-TINTA = "#26221e"
-ONIX, CREMA, ORO = "#1d1b19", "#efe6d2", "#b8923a"
-BLOQUE, ZINC, VEREDA = "#b9b3a6", "#8f959b", "#9e9a92"
-BRASA, NUEVO, AGUA = "#b3261e", "#1d6a6a", "#5c6a5c"
 
 PX = 26                       # pixeles por metro
 MAR = 90                      # aire entre paneles
@@ -50,68 +46,24 @@ im = Image.new("RGB", (W, H), "#dfe6ea")
 d = ImageDraw.Draw(im)
 
 
-class Cara:
-    """un panel de elevacion: (0,0) es el pie de la cara, z hacia arriba"""
+FUENTES = {"cara": f_cara, "med": f_med, "peq": f_peq, "min": f_min}
+
+
+class Cara(Elevacion):
+    """el taller: cuerpo de 7,25 m, con o sin el ónix de las caras de calle"""
 
     def __init__(self, ox, oy, largo, titulo, sub):
-        self.ox, self.oy, self.largo = ox, oy, largo
-        self.titulo, self.sub = titulo, sub
-
-    def rotulo(self):
-        """se llama AL FINAL del panel: si no, el edificio lo tapa"""
-        d.text((self.ox, self.oy - 330), self.titulo, font=f_cara, fill=TINTA)
-        d.text((self.ox, self.oy - 296), self.sub, font=f_peq, fill=TINTA)
-
-    def Q(self, x, z):
-        return (self.ox + x * PX, self.oy - z * PX)
-
-    def r(self, x0, z0, x1, z1, fill, out=TINTA, w=2):
-        d.rectangle([self.Q(x0, z1), self.Q(x1, z0)], fill=fill, outline=out, width=w)
-
-    def t(self, x, z, s, f=f_peq, fill=TINTA, a="mm"):
-        d.text(self.Q(x, z), s, font=f, fill=fill, anchor=a)
+        super().__init__(d, ox, oy, largo, PX, titulo, sub, FUENTES)
 
     def base(self, onix):
-        """vereda, zocalo del +0,40, cuerpo y marca de agua: comun a las cuatro"""
-        L = self.largo
-        self.r(-1.2, -0.45, L + 1.2, 0, VEREDA, None)
-        self.r(0, 0, L, 7.25, ONIX if onix else BLOQUE)
-        if onix:
-            for z in (0.05, 7.2):
-                d.line([self.Q(0, z), self.Q(L, z)], fill=ORO, width=3)
-        self.r(0, 0, L, 0.4, "#2f2c29" if onix else "#8f8a80", ORO if onix else TINTA, 2)
-        d.line([self.Q(0, 0.95), self.Q(L, 0.95)], fill=AGUA, width=2)
-        self.t(L - 0.2, 1.22, "marca de agua", f_min, AGUA if onix else "#5f6b5f", "rm")
-        d.line([self.Q(-1.2, -0.13), self.Q(L + 1.2, -0.13)], fill="#6f6a63", width=4)
+        super().base(ONIX if onix else BLOQUE, 7.25, filete=onix,
+                     zocalo="#2f2c29" if onix else "#8f8a80")
 
     def zinc(self, z0=7.25, z1=7.55, x0=None, x1=None):
-        x0 = 0 if x0 is None else x0
-        x1 = self.largo if x1 is None else x1
-        self.r(x0 - 0.4, z0, x1 + 0.4, z1, ZINC)
-        n = int((x1 - x0 + 0.8) / 0.5)
-        for k in range(n + 1):
-            xx = x0 - 0.4 + k * 0.5
-            d.line([self.Q(xx, z0), self.Q(xx, z1)], fill="#6f767c", width=1)
+        super().zinc(z0, z1, x0, x1)
 
     def turbina(self, x, z0=7.55):
-        self.r(x - 0.12, z0 - 0.3, x + 0.12, z0, "#7d858c", None)
-        d.ellipse([self.Q(x - 0.45, z0 + 0.9), self.Q(x + 0.45, z0)], fill="#b9c0c6", outline=TINTA, width=2)
-        for k in range(6):
-            a = k * math.pi / 3
-            d.line([self.Q(x, z0 + 0.45), self.Q(x + 0.45 * math.cos(a), z0 + 0.45 + 0.45 * math.sin(a))],
-                   fill="#7d858c", width=2)
-
-    def cota_x(self, x0, x1, z, s):
-        d.line([self.Q(x0, z), self.Q(x1, z)], fill=TINTA, width=1)
-        for x in (x0, x1):
-            d.line([self.Q(x, z - 0.18), self.Q(x, z + 0.18)], fill=TINTA, width=2)
-        self.t((x0 + x1) / 2, z - 0.42, s, f_med)
-
-    def cota_z(self, z0, z1, x, s):
-        d.line([self.Q(x, z0), self.Q(x, z1)], fill=TINTA, width=1)
-        for z in (z0, z1):
-            d.line([self.Q(x - 0.16, z), self.Q(x + 0.16, z)], fill=TINTA, width=2)
-        d.text((self.Q(x, (z0 + z1) / 2)[0] + 9, self.Q(x, (z0 + z1) / 2)[1]), s, font=f_med, fill=TINTA, anchor="lm")
+        super().turbina(x, z0)
 
 
 FIL1, FIL2 = 530, 960
