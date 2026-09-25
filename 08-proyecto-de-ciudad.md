@@ -204,6 +204,21 @@ Motor: `codigo/remotion-src/realismo.tsx`. Ciudad: `codigo/remotion-src/Ciudad3D
 
 Render: `npx remotion render src/index.ts Ciudad3D salida --sequence --image-format=png --gl=swangle`. Unos 50 segundos por toma. **Cero créditos: es todo código.**
 
+### Y de aquí al video
+
+La vista de la maqueta no es la imagen final: es la **referencia** que obliga a la imagen final a respetar la ciudad. El paso siguiente está escrito y listo para correr desde la máquina que tiene las claves:
+
+`codigo/vistas_ciudad.py` tiene los prompts de las 24 vistas. Cada uno empieza obligando a respetar cámara, encuadre, perspectiva y posición de cada cosa, y solo pide reemplazar el bloque por material real. Las 24 cuestan unos 72 créditos; se pueden pedir de a una.
+
+```
+python vistas_ciudad.py                        # las 24
+python vistas_ciudad.py ciudad_aerea esquina_noche   # solo esas dos
+```
+
+Después, esa imagen entra a Veo como cuadro inicial. Si la cámara se mueve mucho, cuadro inicial y cuadro final.
+
+Tres reglas están escritas dentro del script y no se saltan: **nunca se escribe el nombre de la red social dentro de un prompt** (le pone el logo a la ropa), **no se piden personas** (una figura humana mal hecha en la referencia se le contagia al video; las personas entran después con su hoja de personaje) y **no se pide texto legible** (la IA inventa nombres y salen en cámara).
+
 ---
 
 ## 8 · Lo que falta validar
@@ -217,6 +232,18 @@ Render: `npx remotion render src/index.ts Ciudad3D salida --sequence --image-for
 | **Anchos mínimos de vereda y retiro frontal** | Los fija la ordenanza del cantón, que no se ha consultado |
 | **La distancia exacta a Guayaquil** | Importa para la temporada 2 |
 
-## 9 · Una contradicción encontrada en la biblia
+## 9 · Dónde vive cada uno
+
+Decidido el 25 de septiembre de 2026 y escrito en la biblia.
+
+| Quién | Dónde | Nota |
+| --- | --- | --- |
+| Gallín | Encima del taller, 7,50 × 21 m en la segunda planta | Ya estaba fijado |
+| **Yadira, la Garza** | **Mz. Q**, una cuadra al sur de la avenida | Baja al taller por la Calle Olmedo |
+| **Kevin, el Pelado** | **Mz. S**, tres cuadras del taller | La biblia ya decía «tres cuadras». Ahora tiene manzana |
+
+De los demás no hay dirección asignada, y mejor así: no se inventa ninguna hasta que un guion la necesite. Las dos manzanas están dibujadas en `01-plano-urbano-el-cruce.png`.
+
+## 10 · Una contradicción encontrada en la biblia
 
 En la pestaña *Ecuador · taller y barrio*, el párrafo de población sigue diciendo **«Puerto Palmar: unos 12.000 habitantes»**, mientras que el resto de la pestaña ya dice **Puerto Candela**. Es un resto del cambio de nombre. Hay que corregirlo: el pueblo se llama Puerto Candela.

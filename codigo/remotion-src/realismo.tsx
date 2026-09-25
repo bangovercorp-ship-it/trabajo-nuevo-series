@@ -313,7 +313,7 @@ export function texPiso(tipo: Piso) {
 
       grano(g, W, H, 26, k);
     } else if (tipo === 'adoquin') {
-      g.fillStyle = '#9a9186'; g.fillRect(0, 0, W, H);
+      g.fillStyle = '#8b8378'; g.fillRect(0, 0, W, H);
       for (let y = 0; y < H; y += 16) {
         const off = (y / 16) % 2 ? 8 : 0;
         for (let x = -16; x < W; x += 16) {
@@ -324,7 +324,7 @@ export function texPiso(tipo: Piso) {
       }
       grano(g, W, H, 18, k);
     } else if (tipo === 'lastre') {
-      g.fillStyle = '#a8a08c'; g.fillRect(0, 0, W, H);
+      g.fillStyle = '#9a9280'; g.fillRect(0, 0, W, H);
       for (let i = 0; i < 700; i++) {
         const t = rnd(k + i * 3);
         g.fillStyle = `rgba(${140 + t * 90},${132 + t * 84},${112 + t * 76},${0.3 + t * 0.5})`;
@@ -342,7 +342,7 @@ export function texPiso(tipo: Piso) {
       }
       grano(g, W, H, 30, k);
     } else if (tipo === 'vereda') {
-      g.fillStyle = '#b3aa9c'; g.fillRect(0, 0, W, H);
+      g.fillStyle = '#a2998a'; g.fillRect(0, 0, W, H);
       g.strokeStyle = 'rgba(110,104,94,0.8)'; g.lineWidth = 2;
       for (let x = 0; x <= W; x += 64) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, H); g.stroke(); }
       for (let y = 0; y <= H; y += 64) { g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); }

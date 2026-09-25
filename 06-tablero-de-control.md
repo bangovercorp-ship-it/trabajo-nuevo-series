@@ -13,7 +13,7 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 | 3 | **Guionista de la temporada** | ✅ | Los 8 guiones están escritos, migrados a Ecuador, y cada uno lleva su falla técnica real con su orden de diagnóstico. El desglose en tomas es del rol 7 |
 | 4 | **Psicólogo del consumidor y marketing** | 🔄 | El estándar de sesgos existe y se aplicó al promocional, pero nunca se pasó por la serie episodio por episodio: gancho, permanencia y motivo para comentar de cada uno |
 | 5 | **Revisor de cumplimiento** | ❌ | **Bloquea la publicación.** Ver el apartado de abajo |
-| 6 | **Director de arte** | 🔄 | Faltan las hojas de personaje de Yadira (garza) y Kevin (mono), y todas las imágenes de escenarios siguen siendo las de la versión peruana |
+| 6 | **Director de arte** | 🔄 | La propuesta de color y materiales del pueblo está cerrada y construida en 3D. Faltan las hojas de personaje de Yadira (garza) y Kevin (mono), y las imágenes de escenarios siguen siendo las peruanas: se reemplazan cuando se dé la orden de generar |
 | 7 | **Director de cine** | 🔄 | Existe el método y una prueba de escena, pero falta la lista de planos del episodio 1 y la continuidad entre tomas |
 | 8 | **Director de voces** | 🔄 | La clave funciona y hay 23.736 caracteres hasta el 25 de octubre. Falta elegir el reparto **con acento costeño ecuatoriano**, no neutro latino |
 | 9 | **Editor y sonido** | ✅ | Nada, y mejoró: al estándar se le sumó el corte sobre la grilla de golpes de la música, probado en el promocional del bar |
@@ -23,7 +23,7 @@ Actualizado el 24 de septiembre de 2026, después de la mudanza a Ecuador. Este 
 
 | # | Rol | Estado | Qué falta para el check |
 | --- | --- | --- | --- |
-| 11 | **Arquitecto y urbanista** | ✅ en papel | El expediente del pueblo y del barrio está hecho. Falta dibujar los planos nuevos y rehacer la maqueta |
+| 11 | **Arquitecto y urbanista** | ✅ | Expediente, planos y maqueta hechos. Además el pueblo entero: territorio, los cinco barrios, sección de cada calle, diseño del Parque del Reloj, color y paisajismo. Ver `08-proyecto-de-ciudad.md`. Queda validar la Loma de la Cruz y el estero |
 | 12 | **Asesor técnico automotriz** | ✅ | El catálogo de fallas reales está completo, con su orden de diagnóstico, el error del aficionado y la metáfora. **Con una dependencia:** el episodio 3 se sostiene en la diferencia de octanaje entre la Extra y la Súper, que está marcada como pendiente de validar. Ese dato lo cierra el rol 13, no este |
 | 13 | **Consultor cultural ecuatoriano** | 🔄 | La biblia sociocultural está escrita con fuentes ecuatorianas, pero **todo lo marcado como pendiente lo tiene que leer una persona de la costa**. Es el único punto que no se puede cerrar desde aquí |
 

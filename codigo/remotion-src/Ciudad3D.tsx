@@ -253,8 +253,11 @@ const Equipamiento: React.FC<{noche?: boolean; est: Estacion}> = ({noche, est}) 
     <Caja x={[124, 124.3]} y={[0, 2.4]} z={[12, 56]} c="#cdc6b6" rug={0.9} />
     {/* Mz. C - Mercado Municipal: una nave larga de zinc, 84 puestos */}
     <Nave x={[248, 340]} z={[16, 52]} alto={4.6} col="#e7dcc6" k={27} eje="x" tono="nuevo" noche={noche} />
-    {[20, 28, 40, 48].map((mz, i) => (
-      <Caja key={i} x={[246, 248]} y={[0, 2.4]} z={[mz, mz + 5]} c={elige(FUERTES, i * 7)} rug={0.9} />
+    {[256, 272, 290, 308, 322].map((mx, i) => (
+      <group key={i}>
+        <Caja x={[mx, mx + 5]} y={[0, 2.3]} z={[53.4, 55.6]} c={elige(FUERTES, i * 7)} rug={0.9} />
+        <Caja x={[mx - 0.4, mx + 5.4]} y={[2.3, 2.45]} z={[52.6, 56.4]} c="#d8d4c8" rug={0.85} />
+      </group>
     ))}
     {/* Mz. F - Iglesia de la Virgen del Carmen */}
     <Nave x={[80, 112]} z={[68, 92]} alto={7.0} col="#f4f1e8" k={31} eje="z" tono="nuevo" />
@@ -741,8 +744,8 @@ export const VISTAS: Record<string, Vista> = {
   la_cuadra: {p: [92, 96, 300], t: [286, 4, 132], fov: 40, hora: 'tarde',
               foco: [270, 0, 150], radio: 260},
   // 6. la esquina: el taller y el bar enfrentados por la avenida
-  la_esquina: {p: [174, 7.2, 132], t: [302, 4.4, 133], fov: 54, hora: 'tarde',
-               foco: [256, 0, 134], radio: 190},
+  la_esquina: {p: [221, 6.0, 124], t: [266, 5.0, 142], fov: 62, hora: 'tarde',
+               foco: [258, 0, 136], radio: 180},
   // 7. la avenida, teleobjetivo: comprime la calle y el taller queda al fondo
   avenida: {p: [26, 4.6, 144], t: [560, 4.4, 128], fov: 26, hora: 'mediodia',
             foco: [280, 0, 136], radio: 340},
@@ -753,8 +756,8 @@ export const VISTAS: Record<string, Vista> = {
   parque: {p: [102, 17, 44], t: [178, 2.5, 94], fov: 50, hora: 'tarde',
            foco: [174, 0, 90], radio: 170},
   // 10. el mercado y la fila de la avenida
-  mercado: {p: [352, 4.6, 74], t: [278, 3.2, 40], fov: 54, hora: 'mediodia',
-            foco: [300, 0, 46], radio: 180},
+  mercado: {p: [330, 4.4, 62], t: [278, 3.4, 42], fov: 58, hora: 'mediodia',
+            foco: [296, 0, 44], radio: 170},
   // 11. la esquina de noche: los dos neones, que son la firma visual de la serie
   esquina_noche: {p: [219, 6.4, 122], t: [268, 5.2, 142], fov: 66, hora: 'noche',
                   foco: [258, 0, 134], radio: 190},
@@ -762,8 +765,8 @@ export const VISTAS: Record<string, Vista> = {
   ciudad_noche: {p: [760, 200, -300], t: [300, 0, 160], fov: 42, hora: 'noche',
                  foco: [300, 0, 140], radio: 620, niebla: 3200},
   // 13. el estero y el muelle al atardecer: de que vive el pueblo
-  estero: {p: [412, 62, 402], t: [618, 1.5, 700], fov: 48, hora: 'tarde',
-           foco: [600, 0, 640], radio: 420, niebla: 4000},
+  estero: {p: [508, 32, 508], t: [612, 2, 678], fov: 46, hora: 'tarde',
+           foco: [600, 0, 640], radio: 380, niebla: 4000},
   // 14. desde la Loma de la Cruz al amanecer, con la bruma sobre la llanura
   loma: {p: [-142, 46, -226], t: [330, 0, 165], fov: 42, hora: 'amanecer',
          foco: [250, 0, 110], radio: 620, niebla: 4400},
@@ -780,13 +783,13 @@ export const ORDEN_CIUDAD = Object.keys(VISTAS);
 // una toma pensada en horizontal no sirve recortada, hay que acercar y subir.
 export const VERTICALES: Record<string, Vista> = {
   v_ciudad: {p: [860, 260, -380], t: [300, 0, 150], fov: 46, hora: 'tarde', foco: [300, 0, 130], radio: 700, niebla: 4200},
-  v_avenida: {p: [96, 4.4, 141], t: [520, 6, 130], fov: 40, hora: 'mediodia', foco: [300, 0, 136], radio: 320},
-  v_taller: {p: [262, 3.2, 196], t: [258, 6.2, 156], fov: 62, hora: 'tarde', foco: [258, 0, 165], radio: 130},
-  v_esquina: {p: [222, 5.4, 190], t: [256, 5.0, 124], fov: 58, hora: 'tarde', foco: [252, 0, 150], radio: 180},
-  v_parque: {p: [174, 3.6, 128], t: [174, 8.2, 92], fov: 60, hora: 'tarde', foco: [174, 0, 96], radio: 150},
-  v_esquina_noche: {p: [224, 4.6, 168], t: [258, 6.0, 140], fov: 64, hora: 'noche', foco: [255, 0, 146], radio: 170},
+  v_avenida: {p: [103, 4.4, 142], t: [520, 7, 132], fov: 40, hora: 'mediodia', foco: [300, 0, 136], radio: 320},
+  v_taller: {p: [257, 2.8, 126], t: [258, 6.0, 152], fov: 62, hora: 'tarde', foco: [258, 0, 148], radio: 130},
+  v_esquina: {p: [205, 5.8, 139], t: [262, 4.8, 133], fov: 58, hora: 'tarde', foco: [252, 0, 136], radio: 180},
+  v_parque: {p: [187, 3.8, 126], t: [172, 7.0, 88], fov: 60, hora: 'tarde', foco: [174, 0, 96], radio: 150},
+  v_esquina_noche: {p: [216, 5.0, 124], t: [266, 5.4, 144], fov: 64, hora: 'noche', foco: [258, 0, 136], radio: 175},
   v_loma: {p: [-300, 52, -180], t: [320, 0, 170], fov: 42, hora: 'amanecer', foco: [180, 0, 60], radio: 680, niebla: 3000},
-  v_estero: {p: [520, 26, 420], t: [620, 1, 700], fov: 52, hora: 'tarde', foco: [600, 0, 600], radio: 420, niebla: 4000},
+  v_estero: {p: [504, 44, 496], t: [612, 2, 674], fov: 44, hora: 'tarde', foco: [600, 0, 630], radio: 380, niebla: 4000},
 };
 export const ORDEN_VERTICAL = Object.keys(VERTICALES);
 

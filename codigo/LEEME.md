@@ -26,7 +26,8 @@ Dos advertencias antes de tocar nada:
 | `personajes.py` | Los prompts de las hojas de personaje del elenco | Falta Yadira y Kevin |
 | `laminas.py` | Láminas de expresiones y de poses | Hecho para el elenco viejo |
 | `escenarios.py` | Arte de concepto de los escenarios | **Todo es versión Perú** |
-| `vistas_reales.py` | Convierte cada vista de la maqueta en foto realista | Sirve tal cual |
+| `vistas_reales.py` | Convierte cada vista de la maqueta del taller en foto realista | Sirve tal cual |
+| `vistas_ciudad.py` | **Lo mismo para las 24 vistas de la ciudad, con los prompts ya escritos** | Nuevo, listo para correr |
 | `planos_diseno/comun.py` | Fuentes, salida, paleta y la clase de elevación compartida | Portable |
 | `planos_diseno/plano_urbano.py` | El plano del barrio | Ecuador, verificado: 496 lotes, 25 mz, 2.232 hab |
 | `planos_diseno/plano_taller.py` | Planta y fachada del taller, con las 9 zonas y el +0,40 | Ecuador |
