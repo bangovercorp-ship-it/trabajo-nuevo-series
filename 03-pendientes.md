@@ -59,6 +59,10 @@ La temporada 1 está auditada y corregida, y las temporadas 2 a 5 están escrita
 
 Lo que queda abierto de este bloque son **cinco decisiones del dueño** y **seis validaciones** con una persona de la costa. Están listadas al final de ese archivo. Ninguna cuesta créditos; todas bloquean escritura fina.
 
+## Bloque 4c · Hojas de los clientes invitados · NUEVO, encontrado el 25 de septiembre
+
+Al desglosar el episodio 1 apareció un hueco que no estaba en ningún bloque: **cada episodio tiene un cliente invitado y ninguno tiene hoja de personaje.** Beto Chóez el burro repartidor sale en seis de las nueve tomas del episodio 1. Sin hoja, es un burro distinto en cada plano. Son ocho hojas, 24 créditos, y conviene generarlas juntas para que compartan estilo.
+
 ## Bloque 5 · Producir el episodio 1
 
 Con todo lo anterior listo: desglosar el guion en tomas, generar cuadros, generar clips con cuadro inicial y final, montar con sonido real y subtítulos.
