@@ -36,6 +36,22 @@ PERSONAJES = {
   "cheekbones, strong but refined jaw, healthy skin, a calm confident half-smile; keep only a thin old scar across the left "
   "eyebrow. 5) Athletic V-shaped torso, broad shoulders, defined arms, narrower waist, tall and upright. "),
 
+ "beto": ("20-hoja-beto-choez", [GALLIN_V3],
+  SOLO_ESTILO + "The character is Beto Choez, a donkey-human hybrid man about thirty-two, a delivery rider in a small "
+  "town on the coast of Ecuador. His FACE IS A FULLY HUMAN FACE: human nose, human mouth, human jaw, warm brown skin, "
+  "honest tired eyes with dark circles under them, thick black eyebrows, a few days of patchy stubble, short black hair. "
+  "The only donkey traits: two long grey-brown donkey ears rising from the sides of his head and angled slightly back; "
+  "a short stiff upright mane of dark hair running from his hairline over the crown and down the nape of his neck; a soft "
+  "ring of pale cream skin around his mouth and around his eyes, like the mealy muzzle of a donkey, blending smoothly "
+  "into his brown skin; short grey-brown velvety fur on his forearms and on the back of his neck; and a thin grey donkey "
+  "tail with a dark tuft at the tip. NOT a donkey head, NOT a snout, NOT a muzzle. Lean wiry build with hard stringy "
+  "muscle, wide shoulders and thick forearms from carrying loads, narrow hips, standing slightly hunched forward as if "
+  "he were still pushing something. He wears a faded plain yellow football shirt with no logo and no text, dark "
+  "knee-length cargo shorts, black rubber boots, and a clear plastic rain poncho pushed back off his shoulders. Crossed "
+  "over his chest, two black rubber straps cut from an inner tube, the kind used to tie a load onto a motorcycle. He "
+  "holds an old scratched open-face helmet in one hand. He is completely DRY in this sheet. Anxious and polite, in a "
+  "hurry even while standing still. "),
+
  "porfirio": ("04-hoja-porfirio", [GALLIN_V3],
   SOLO_ESTILO + "The character is Porfirio, a man about forty with subtle pig traits, the cashier of a mechanic shop. "
   "His FACE IS A FULLY HUMAN FACE: human nose, human mouth and human jaw, round friendly cheeks, rosy pink skin, small "

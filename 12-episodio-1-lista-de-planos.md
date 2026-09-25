@@ -25,7 +25,7 @@ Desglose del 25 de septiembre de 2026. Sale del guion tal como está en la bibli
 
 **Subtítulo.** Ninguno. Los tres primeros segundos se ganan con imagen y sonido.
 
-**Referencias.** Hoja de Beto *(no existe todavía)* · `referencias/planos-ecuador/03-fachada-taller` · una vista nocturna de la vía.
+**Referencias.** Hoja de Beto *(diseñada, sin generar: `personajes.py`, clave `beto`)* · `referencias/planos-ecuador/03-fachada-taller` · una vista nocturna de la vía.
 
 ---
 
@@ -166,7 +166,9 @@ El cuadro fijo de la toma 9 no gasta video, y el empuje lo hace ffmpeg gratis.
 
 ## Lo que falta antes de generar el primer cuadro
 
-**Falta una hoja de personaje que nadie había listado: Beto Chóez, el burro repartidor.** Es el cliente invitado del episodio 1 y sale en seis de las nueve tomas. Sin hoja, es un burro distinto en cada plano. Tres créditos.
+**Beto Chóez ya está diseñado** — ficha completa en la pestaña *Personajes a fondo* de la biblia, y el prompt cargado en `codigo/personajes.py` con la clave `beto`. Falta **generarlo**: tres créditos. Sale en seis de las nueve tomas, así que sin hoja es un burro distinto en cada plano.
+
+**Y una regla que salió de diseñarlo:** la hoja se genera **seco**. El agua es condición del episodio 1 y va en el prompt de cada cuadro. Una hoja mojada contamina todos los episodios en que Beto vuelva.
 
 Y esto no es solo del episodio 1: **cada episodio tiene su cliente invitado** —Don Ramiro el carnero, Chito el colibrí, y los demás— y ninguno tiene hoja. Son ocho hojas más, 24 créditos, que no están en ningún bloque del plan. Conviene generarlas todas juntas, con el mismo estilo, antes de empezar la temporada.
 

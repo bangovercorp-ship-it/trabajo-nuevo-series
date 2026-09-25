@@ -61,7 +61,9 @@ Lo que queda abierto de este bloque son **cinco decisiones del dueño** y **seis
 
 ## Bloque 4c · Hojas de los clientes invitados · NUEVO, encontrado el 25 de septiembre
 
-Al desglosar el episodio 1 apareció un hueco que no estaba en ningún bloque: **cada episodio tiene un cliente invitado y ninguno tiene hoja de personaje.** Beto Chóez el burro repartidor sale en seis de las nueve tomas del episodio 1. Sin hoja, es un burro distinto en cada plano. Son ocho hojas, 24 créditos, y conviene generarlas juntas para que compartan estilo.
+Al desglosar el episodio 1 apareció un hueco que no estaba en ningún bloque: **cada episodio tiene un cliente invitado y ninguno tiene hoja de personaje.** Beto Chóez el burro repartidor sale en seis de las nueve tomas del episodio 1. Sin hoja, es un burro distinto en cada plano. Son ocho hojas, 24 créditos, y conviene generarlas juntas para que compartan estilo. **Beto ya está diseñado** (ficha en la biblia, prompt en `codigo/personajes.py`, clave `beto`): faltan los otros siete.
+
+Convención de numeración de las hojas: 01 a 09 el elenco fijo, 10 Yadira, 11 Kevin, y de 20 en adelante los clientes invitados. Beto es la 20.
 
 ## Bloque 5 · Producir el episodio 1
 
