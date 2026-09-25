@@ -12,6 +12,7 @@
 - **En las vistas de referencia no se dibuja gente**, a propósito: una figura humana mal hecha en la referencia se le contagia al video generado.
 - En Veo, las tomas con movimiento se generan con **cuadro inicial y final**, si no, el personaje cambia de ropa a mitad del clip.
 - Producto: Lázaro toda la temporada 1. **Nunca se promete que cure nada. Se recomienda, no se receta.**
+- **Un producto por temporada** (decidido el 25 de septiembre): Lázaro en la 1, RV Rompe Varios en la 2, Kleos en la 3, Vink en la 4 y RKO Energy en la 5. Cada uno entra como entró Lázaro: se ve, no se explica, y no se nombra hasta la temporada 3. El detalle está en la pestaña *Plan de cinco temporadas* de la biblia. **Vink no aparece entre las fotos oficiales de la marca:** hay que confirmar el nombre y conseguir la foto antes de que entre en cámara.
 
 ## El elenco
 
