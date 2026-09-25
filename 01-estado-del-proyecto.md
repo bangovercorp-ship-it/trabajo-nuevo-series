@@ -69,3 +69,35 @@ Los dos nuevos **todavía no tienen hoja de personaje generada**. Es de lo prime
 - En la vista del bar desde la ventana, el taller salió de ladrillo y tiene que ser negro ónix.
 - En dos vistas de la maqueta, el generador agregó columnas de elevador que no están en el plano.
 - Todas las imágenes de escenarios siguen siendo las de la versión peruana.
+
+## Auditoría del 24 de septiembre, por la tarde
+
+Se cruzó esta carpeta contra la biblia, documento por documento. Queda anotado para que
+nadie vuelva a auditar lo mismo.
+
+**Corregido en la biblia:**
+
+- La pestaña *Escenarios* seguía llamando **La Capital** a la ciudad de los recuerdos, en
+  seis lugares, y el nombre además era falso para Ecuador: Guayaquil no es la capital. Ahora
+  dice Guayaquil, incluido el título de la sección.
+- La misma pestaña seguía diciendo **jirón**, que es peruano, en las seis menciones de la
+  calle de salida del taller. Ahora dice Calle Olmedo, que es el nombre que ya tenía en el
+  plano del barrio.
+- La pestaña *Personajes a fondo* decía que todas las voces hablan **español peruano de
+  Lima**, y le ponía a Gallín el vocativo **causa**, que es limeño. Ahora dice español
+  ecuatoriano de la costa, y el vocativo es *ñaño*.
+- La pestaña *Estrategia y producción*, que no estaba listada en ninguna parte y por eso
+  nadie había revisado, tenía cuatro datos viejos: pedía confirmar con **DIGESA**, que es
+  peruana (ahora ARCSA); daba por confirmar el plan de ElevenLabs, que ya funciona;
+  contaba 30.000 caracteres al mes en vez de los 23.736 disponibles; y decía que quedaban
+  1.970 créditos en vez de 1.744. Y decía **"etiqueta al pata"**, que también es peruano.
+
+**Verificado y sin problema:**
+
+- La pestaña *Biblia* está limpia: ni un rastro peruano.
+- Las seis skills de `05-habilidades.md` sí están instaladas en esta máquina. Lo que pasa es
+  que una sesión en la nube no ve el disco y por eso no las encuentra.
+
+**Queda sin corregir, y es menor:** el texto alternativo de una imagen del pasaje todavía
+dice *Jr. Los Mecánicos*. Es un atributo de la imagen, no del documento, y se arregla cuando
+esa imagen se regenere.

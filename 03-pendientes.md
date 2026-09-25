@@ -40,7 +40,7 @@ Con todo lo anterior listo: desglosar el guion en tomas, generar cuadros, genera
 
 ## Lo que no se puede resolver aquí
 
-**Que un ecuatoriano de la costa lea la parte del habla**, sobre todo los términos del taller (cloche, cabezote, bocines) y las groserías con su intensidad. Está todo marcado en la biblia sociocultural como pendiente de validar. Es el mayor riesgo del proyecto: un acento falso se detecta en tres palabras y tumba todo lo demás.
+**Que un ecuatoriano de la costa lea la parte del habla**, sobre todo los términos del taller (cloche, cabezote, bocines) y las groserías con su intensidad. Entra aquí el vocativo **ñaño**, que se puso el 24 de septiembre donde antes decía *causa*: es ecuatoriano y está documentado, pero hay que oír si un hombre mayor de la costa le dice así a un cliente más joven, o si diría *mijo*, *pelado* o *compadre*. Está todo marcado en la biblia sociocultural como pendiente de validar. Es el mayor riesgo del proyecto: un acento falso se detecta en tres palabras y tumba todo lo demás.
 
 ## Defectos que conviene arreglar de paso
 
