@@ -39,7 +39,7 @@ PERSONAJES = {
  "beto": ("20-hoja-beto-choez", [GALLIN_V3],
   SOLO_ESTILO + "The character is Beto Choez, a donkey-human hybrid man about thirty-two, a delivery rider in a small "
   "town on the coast of Ecuador. His FACE IS A FULLY HUMAN FACE: human nose, human mouth, human jaw, warm brown skin, "
-  "honest tired eyes with dark circles under them, thick black eyebrows, a few days of patchy stubble, short black hair. "
+  "very large dark brown eyes set wide apart, with a HORIZONTAL rectangular pupil like the eye of a real donkey, long thick lashes, and deep dark circles under them, thick black eyebrows, a few days of patchy stubble, short black hair. "
   "The only donkey traits: two long grey-brown donkey ears rising from the sides of his head and angled slightly back; "
   "a short stiff upright mane of dark hair running from his hairline over the crown and down the nape of his neck; a soft "
   "ring of pale cream skin around his mouth and around his eyes, like the mealy muzzle of a donkey, blending smoothly "
@@ -51,6 +51,29 @@ PERSONAJES = {
   "over his chest, two black rubber straps cut from an inner tube, the kind used to tie a load onto a motorcycle. He "
   "holds an old scratched open-face helmet in one hand. He is completely DRY in this sheet. Anxious and polite, in a "
   "hurry even while standing still. "),
+
+ "yadira": ("10-hoja-yadira", [GALLIN_V3],
+  SOLO_ESTILO + "The character is Yadira Quimi, a heron-human hybrid woman of twenty-six, the motorcycle technician "
+  "of a small coastal workshop in Ecuador. Her FACE IS A FULLY HUMAN FACE: human nose, human mouth, high cheekbones, "
+  "warm light brown skin, calm serious expression, no smile. THE EYES ARE THE KEY TO HER: pale yellow heron irises "
+  "with a tiny black pinprick pupil, set slightly high in the face, and a steady unblinking stare. The only heron "
+  "traits: smooth white and pale grey feathers instead of hair, pulled back tight into a low knot, with two long thin "
+  "black plume feathers trailing from the back of her head; a fine down of white feathers along her collarbones and "
+  "along the back of her forearms; a long slender neck. NOT a bird head, NOT a beak, NOT a costume. Tall, thin and "
+  "wiry, with strong forearms and black-rimmed fingernails. She wears a grey mechanic tank top, dark work trousers, a "
+  "grease rag over one shoulder and a thin steel bracelet, and she holds a wrench without letting go of it. Still, "
+  "exact, unhurried posture. "),
+
+ "kevin": ("11-hoja-kevin", [GALLIN_V3],
+  SOLO_ESTILO + "The character is Kevin Bajana, nicknamed el Pelado, a monkey-human hybrid boy of eighteen, the "
+  "apprentice of a small coastal workshop in Ecuador. His FACE IS A FULLY HUMAN FACE: human nose, human mouth, round "
+  "young face, warm brown skin, no beard, a big crooked grin, ears that stick out. THE EYES ARE THE KEY TO HIM: "
+  "forward facing and set close together, the iris so dark brown that it swallows the pupil, almost NO white of the "
+  "eye showing, wide open and alert as if he were scanning the whole room at once. The only monkey traits: very short "
+  "buzz-cut dark hair over a slightly domed crown, fine dark hair on his forearms, long thin nimble fingers, and a "
+  "long prehensile monkey tail curling behind him. NOT a monkey head, NOT a snout. Skinny, small and restless, weight "
+  "on one leg. He wears an oversized football shirt with no logo, baggy shorts, cheap white sneakers, and he holds a "
+  "phone vertically in one hand, filming. He cannot stand still. "),
 
  "porfirio": ("04-hoja-porfirio", [GALLIN_V3],
   SOLO_ESTILO + "The character is Porfirio, a man about forty with subtle pig traits, the cashier of a mechanic shop. "

@@ -172,7 +172,7 @@ El cuadro fijo de la toma 9 no gasta video, y el empuje lo hace ffmpeg gratis.
 
 Y esto no es solo del episodio 1: **cada episodio tiene su cliente invitado** —Don Ramiro el carnero, Chito el colibrí, y los demás— y ninguno tiene hoja. Son ocho hojas más, 24 créditos, que no están en ningún bloque del plan. Conviene generarlas todas juntas, con el mismo estilo, antes de empezar la temporada.
 
-**Falta la hoja de Kevin**, que ya estaba en el plan, porque aparece en la toma 2.
+**Falta la hoja de Kevin**, que ya estaba en el plan, porque aparece en la toma 2. Y hasta el 25 de septiembre **ni Kevin ni Yadira tenían prompt** en `personajes.py`, aunque sus fichas estaban escritas en la biblia: se podía pedir la hoja y el script no la conocía. Ya están cargados, con las claves `kevin` y `yadira`.
 
 **Y falta resolver los dos defectos que se arrastran:** el plumaje de Gallín en primeros planos, que aquí importa mucho porque las tomas 4, 5 y 6 son primeros planos suyos, y la nariz de Porfirio, que sale en las tomas 2, 3 y 8.
 
