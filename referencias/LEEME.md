@@ -18,6 +18,7 @@ no para usar como referencia de generación.
 | `prueba-escena/` | Los cuadros de la prueba del episodio 1 | Vigentes como prueba de escala |
 | `planos-ecuador/` | Los 6 planos rehechos para Ecuador | **Vigentes.** Reemplazan a `planos/` |
 | `maqueta-ecuador/` | Las 7 vistas del taller y las 6 del bar y el pasaje, desde la maqueta nueva | **Vigentes.** Reemplazan a `maqueta/` |
+| `ciudad-ecuador/` | Las 8 vistas del barrio entero: aérea, cenital, la cuadra, la esquina, la avenida, la Calle Olmedo, el parque y la esquina de noche | **Vigentes** |
 
 ## Defectos que se ven en estas imágenes
 
@@ -42,3 +43,15 @@ quedan como referencia de lo que había, pero **para generar imágenes manda lo 
 Defectos de la versión peruana que ya no aplican, porque se corrigieron en la maqueta:
 la corona de la puerta roja estaba metida dentro de la hoja y no se veía, y la
 desmontadora tapaba la puerta en la toma que avanza hacia ella.
+
+
+## Lo rehecho el 25 de septiembre, por la tarde
+
+`planos-ecuador/` suma las **cuatro caras del taller** y las **cuatro caras del bar**,
+cada una con su planta de cubierta. Existen para que ningún plano de ningún episodio
+tenga que inventar un lado, y traen la propuesta de materiales cara por cara.
+
+`ciudad-ecuador/` es el barrio entero en 3D, de `codigo/remotion-src/Ciudad3D.tsx`.
+La geometría sale tal cual del plano urbano, y las casas usan una **semilla fija**:
+el mismo lote saca siempre la misma casa, del mismo alto y del mismo color. La ciudad
+es reproducible entre capítulos. Cambiar la semilla cambia el barrio entero.
