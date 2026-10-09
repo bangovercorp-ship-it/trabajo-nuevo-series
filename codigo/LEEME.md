@@ -47,6 +47,10 @@ En `Taller3D.tsx` está el hallazgo que costó encontrar: la estantería de llan
 con el almacén al correrse. Se achicó el almacén y se dejó 1 m libre para el riel. Si la
 maqueta se escribe de cero, ese error vuelve.
 
+## Guion 2 · material de apoyo generado
+
+`guion2_planos.py` genera los 13 clips verticales del guion 2 (alcantarilla, reloj, gas, nariz, perfumista, cerebro, ducha, jabón, perfume…) con Veo 3.1 Fast: 52 créditos, cada clip ya ligado a la frase de la voz que apoya. Corre en la PC de la clave (`python guion2_planos.py costo` primero).
+
 ## El episodio 1
 
 `episodio1.py` tiene los once prompts de cuadro y los ocho de movimiento del episodio 1, con
