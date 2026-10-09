@@ -3,9 +3,8 @@
 Duración objetivo: 50–55 s · TikTok / Reels / Shorts · sin persona propia en pantalla (todo material de apoyo).
 
 ## 1. Qué cambié respecto a la idea original y por qué
-La idea ("el que trabaja en alcantarillas disfruta más un buen olor") es muy buena como gancho, pero **no está demostrada**:
-no hay un estudio que diga que esas personas disfruten más un perfume. Si lo decimos como hecho, nos pueden desmentir.
-Lo que sí está respaldado y es igual de curioso:
+La idea central ("el que trabaja en alcantarillas disfruta más un buen olor") queda **como afirmación directa**, tal como la planteó el autor
+(experiencia real, y genera comentarios). Regla: no se la atribuimos a un estudio. Alrededor van datos que sí tienen respaldo científico:
 
 | Dato | Estado | Fuente para citar (verificar antes de publicar) |
 |---|---|---|
@@ -15,7 +14,7 @@ Lo que sí está respaldado y es igual de curioso:
 | El olfato se entrena; perfumistas muestran diferencias en áreas olfativas del cerebro | Respaldado | Delon-Martin et al. 2013, *NeuroImage* |
 | Olor → amígdala / corteza orbitofrontal (emoción y recompensa), sin pasar primero por el tálamo | Respaldado | Gottfried 2010, *Nature Reviews Neuroscience* |
 | Que el agrado de un olor es en gran parte aprendido por asociación | Respaldado | Herz (varios trabajos) |
-| "Quien vive entre malos olores disfruta más un perfume" | **Hipótesis, no demostrada** | — se dice como pregunta abierta |
+| "Quien vive entre malos olores disfruta MÁS un baño, un jabón, un perfume" | Afirmación editorial basada en experiencia (decisión del autor); no se atribuye a ningún estudio | — se dice directo, sin "la ciencia demuestra" |
 
 ## 2. Guion (texto para la voz)
 1. ¿Sabías que quien trabaja en una alcantarilla… deja de oler la alcantarilla?
@@ -23,8 +22,9 @@ Lo que sí está respaldado y es igual de curioso:
 3. Hay gases de alcantarilla que incluso apagan el olfato por completo.
 4. Tienes unos cuatrocientos tipos de receptores para oler. Y se entrenan: los perfumistas tienen distinto el cerebro en las zonas del olfato.
 5. Además, los olores van directo a las zonas de emoción y recompensa. Por eso un aroma te da placer, o un recuerdo, en un segundo.
-6. ¿Y quien vive entre malos olores disfruta más un perfume? Nadie lo ha medido. Pero tu cerebro sí aprende a premiar lo que asocia con cosas buenas.
+6. Y por eso, quien se pasa el día entre barro y malos olores disfruta MUCHO más un buen baño, un jabón, un perfume. Mucho más que el resto.
 7. Elige un aroma. Úsalo en tus mejores momentos. Y deja que tu cerebro haga el resto.
+8. ¿Estás de acuerdo? Te leo en los comentarios.
 
 ## 3. Propuesta de edición (sin persona nuestra)
 Reglas: texto en pantalla de máximo 2 palabras · animaciones pequeñas arriba · material de apoyo **a pantalla completa** siempre
@@ -39,7 +39,8 @@ Idea visual guía: **la perilla de volumen**. El olor es un volumen que el cereb
 | 3 | "gases… apagan el olfato" | `gas mask`, `gas detector warning`, `warning sign hazard`, `smoke pipe` | alerta de gas | PELIGRO / SIN OLFATO | tono de alerta corto y seco |
 | 4 | "400 receptores… se entrenan… perfumistas" | `nose close up`, `perfume laboratory`, `scent strips smelling`, `brain MRI scan` | contador animado 0→400 con receptores | 400 / SE ENTRENAN | "tic" por cada centena; tecla de laboratorio |
 | 5 | "emoción y recompensa… recuerdo" | `brain neurons animation`, `woman smelling flowers smiling`, `grandmother kitchen`, `perfume spray slow motion` | ruta nariz → cerebro (amígdala) | EMOCIÓN / RECUERDO | latido suave, "chime" en "placer" |
-| 6 | "¿disfruta más un perfume? nadie lo ha medido" | `man applying perfume`, `perfume bottles luxury`, `question mark` (animado) | signo de pregunta de cristal | ¿LO MIDIERON? / NADIE | pausa dramática de 0,4 s sin música |
+| 6 | "disfruta MUCHO más un buen baño, un jabón, un perfume" | `worker mud cleaning`, `shower water close up`, `soap bubbles`, `man applying perfume` | jabón con burbujas → frasco con niebla | DISFRUTA MÁS | golpe seco en "mucho" y whoosh al pasar del barro a la ducha |
+| 8 | "¿Estás de acuerdo?" | `thumbs up`, `chat bubbles` | burbuja de comentario | ¿ESTÁS DE ACUERDO? | pop suave |
 | 7 | "Elige un aroma… mejores momentos" | `friends celebrating`, `couple hugging sunset`, `perfume spray` | frasco con niebla plateada | TU AROMA / TU MOMENTO | cierre brillante, la música sube y termina limpia |
 
 Cierre: sin tarjeta de marca (como pediste). Audio −14 LUFS, pico −1 dB.

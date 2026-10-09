@@ -12,5 +12,5 @@
    Openverse, Archive.org, Huggingface (solo permite PyPI, GitHub y Google Fonts). Se probó dos veces. Pedir al usuario que permita los dominios
    (Pexels/Pixabay necesitan además clave gratuita de API) o que descargue los clips de la lista de búsqueda.
 4. **Respetar el pedido de estructura.** Persona solo al inicio si se pide; sin cámara lenta; animaciones pequeñas arriba; texto máx. 2 palabras.
-5. **Datos curiosos, pero ciertos.** Una hipótesis no es un hecho: se presenta como pregunta abierta.
+5. **Datos de ciencia = con respaldo; afirmaciones de experiencia del autor = tal como las dice el autor.** No convertir su frase en pregunta ni agregar "nadie lo ha medido": arruina el guion. Solo evitar atribuirla a "un estudio". La controversia que genera comentarios es una decisión editorial válida.
 6. **Responder claro y corto**, en español sencillo (la persona es principiante). Entregar en pasos, no en bloques enormes.
